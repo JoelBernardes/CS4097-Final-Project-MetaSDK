@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1493136306}
     m_Modifications:
+    - target: {fileID: 1293050185675339356, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 5063169}
     - target: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.20000002
@@ -206,16 +210,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookDrop2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2627787096142250264, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 150022134776423284, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 4132267631644103558, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5063171}
   m_SourcePrefab: {fileID: 100100000, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
 --- !u!4 &5063168 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
   m_PrefabInstance: {fileID: 5063167}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &5063169 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2371638943745920676, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 5063167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5063170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 5063167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5063171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5063170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _rigidbody: {fileID: 0}
+  _distanceThreshold: 0.01
+  _snapPoseTransform: {fileID: 0}
+  _defaultInteractable: {fileID: 0}
+  _timeOutInteractable: {fileID: 0}
+  _timeOut: 0
 --- !u!1 &18508815
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,6 +971,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 967016591553411399, guid: 667648ba453719e4683cbbab5e2b30c8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 299045572}
+    - targetCorrespondingSourceObject: {fileID: 967016591553411399, guid: 667648ba453719e4683cbbab5e2b30c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 299045573}
   m_SourcePrefab: {fileID: 100100000, guid: 667648ba453719e4683cbbab5e2b30c8, type: 3}
 --- !u!4 &93980675 stripped
 Transform:
@@ -4274,6 +4321,25 @@ MonoBehaviour:
   tooltipDescription: A book about a bear with green overalls searching for his buton.
     He kinda reminds me of snuffles.
   tooltipPrefab: {fileID: 0}
+--- !u!114 &299045573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299045560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _rigidbody: {fileID: 299045562}
+  _snapPoseDelegate: {fileID: 0}
+  _movementProvider: {fileID: 0}
 --- !u!1 &302107074
 GameObject:
   m_ObjectHideFlags: 0
@@ -14738,6 +14804,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1493136306}
     m_Modifications:
+    - target: {fileID: 1293050185675339356, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1074849431}
     - target: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.20000002
@@ -14814,16 +14884,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookDrop
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2627787096142250264, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 150022134776423284, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 4132267631644103558, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1074849433}
   m_SourcePrefab: {fileID: 100100000, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
 --- !u!4 &1074849430 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
   m_PrefabInstance: {fileID: 1074849429}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1074849431 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2371638943745920676, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1074849429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1074849432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1074849429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1074849433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074849432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _rigidbody: {fileID: 0}
+  _distanceThreshold: 0.01
+  _snapPoseTransform: {fileID: 0}
+  _defaultInteractable: {fileID: 0}
+  _timeOutInteractable: {fileID: 0}
+  _timeOut: 0
 --- !u!1 &1079240243
 GameObject:
   m_ObjectHideFlags: 0
@@ -15716,6 +15826,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 33b8b437b0c32467493c2d213625ff54, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1119511701}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 33b8b437b0c32467493c2d213625ff54, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1119511702}
   m_SourcePrefab: {fileID: 100100000, guid: 33b8b437b0c32467493c2d213625ff54, type: 3}
 --- !u!4 &1119511700 stripped
 Transform:
@@ -15738,6 +15851,25 @@ MonoBehaviour:
   tooltipDescription: Adventurer, hero, and philanthropist. I'm not sure what a philanthropist
     does but if Batman does it Snuffles can too.
   tooltipPrefab: {fileID: 0}
+--- !u!114 &1119511702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963404976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _rigidbody: {fileID: 963404980}
+  _snapPoseDelegate: {fileID: 0}
+  _movementProvider: {fileID: 0}
 --- !u!4 &1119865527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 72786693764988424, guid: 89893e4928b4fdf4cb7fb21c8d7c3727, type: 3}
@@ -16517,6 +16649,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7738744186548441550, guid: 80872c6dd156f544788e44da2ac91219, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1540595074}
+    - targetCorrespondingSourceObject: {fileID: 7738744186548441550, guid: 80872c6dd156f544788e44da2ac91219, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1540595075}
   m_SourcePrefab: {fileID: 100100000, guid: 80872c6dd156f544788e44da2ac91219, type: 3}
 --- !u!4 &1166714745 stripped
 Transform:
@@ -16593,6 +16728,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1493136306}
     m_Modifications:
+    - target: {fileID: 1293050185675339356, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1174369056}
     - target: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.55
@@ -16645,16 +16784,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: StandDrop
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2627787096142250264, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 150022134776423284, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 4132267631644103558, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1174369058}
   m_SourcePrefab: {fileID: 100100000, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
 --- !u!4 &1174369055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
   m_PrefabInstance: {fileID: 1174369054}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1174369056 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2371638943745920676, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1174369054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1174369057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1174369054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1174369058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174369057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _rigidbody: {fileID: 0}
+  _distanceThreshold: 0.01
+  _snapPoseTransform: {fileID: 0}
+  _defaultInteractable: {fileID: 0}
+  _timeOutInteractable: {fileID: 0}
+  _timeOut: 0
 --- !u!1 &1179053561
 GameObject:
   m_ObjectHideFlags: 0
@@ -16930,6 +17109,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2989698565783395876, guid: 164e398b45d0b2e45b7937efbe8699ce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1194028293}
+    - targetCorrespondingSourceObject: {fileID: 2989698565783395876, guid: 164e398b45d0b2e45b7937efbe8699ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1194028294}
   m_SourcePrefab: {fileID: 100100000, guid: 164e398b45d0b2e45b7937efbe8699ce, type: 3}
 --- !u!4 &1194028292 stripped
 Transform:
@@ -16952,6 +17134,25 @@ MonoBehaviour:
   tooltipDescription: A book about a tiny prince who roams the planet. Mom gave it
     to me and said it made her cry. I just like the pictures.
   tooltipPrefab: {fileID: 0}
+--- !u!114 &1194028294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661398024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _rigidbody: {fileID: 661398026}
+  _snapPoseDelegate: {fileID: 0}
+  _movementProvider: {fileID: 0}
 --- !u!1 &1195320048
 GameObject:
   m_ObjectHideFlags: 0
@@ -17131,6 +17332,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1493136306}
     m_Modifications:
+    - target: {fileID: 1293050185675339356, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1214204118}
     - target: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.642
@@ -17179,16 +17384,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: BedDrop
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2627787096142250264, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 150022134776423284, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 4132267631644103558, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1214204120}
   m_SourcePrefab: {fileID: 100100000, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
 --- !u!4 &1214204117 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
   m_PrefabInstance: {fileID: 1214204116}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1214204118 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2371638943745920676, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1214204116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1214204119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1214204116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1214204120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214204119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _rigidbody: {fileID: 0}
+  _distanceThreshold: 0.01
+  _snapPoseTransform: {fileID: 0}
+  _defaultInteractable: {fileID: 0}
+  _timeOutInteractable: {fileID: 0}
+  _timeOut: 0
 --- !u!1 &1217219236
 GameObject:
   m_ObjectHideFlags: 0
@@ -19325,6 +19570,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1493136306}
     m_Modifications:
+    - target: {fileID: 1293050185675339356, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1369414906}
     - target: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.69268
@@ -19409,16 +19658,56 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2627787096142250264, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 150022134776423284, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 4132267631644103558, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1369414908}
   m_SourcePrefab: {fileID: 100100000, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
 --- !u!4 &1369414905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
   m_PrefabInstance: {fileID: 1369414904}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1369414906 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2371638943745920676, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1369414904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1369414907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1369414904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1369414908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369414907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _rigidbody: {fileID: 0}
+  _distanceThreshold: 0.01
+  _snapPoseTransform: {fileID: 0}
+  _defaultInteractable: {fileID: 0}
+  _timeOutInteractable: {fileID: 0}
+  _timeOut: 0
 --- !u!1 &1372096676
 GameObject:
   m_ObjectHideFlags: 0
@@ -20943,6 +21232,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6557717566896455631, guid: eeaad410de59e8c408e89f8f1260dece, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1441656065}
+    - targetCorrespondingSourceObject: {fileID: 6557717566896455631, guid: eeaad410de59e8c408e89f8f1260dece, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1441656066}
   m_SourcePrefab: {fileID: 100100000, guid: eeaad410de59e8c408e89f8f1260dece, type: 3}
 --- !u!4 &1441656064 stripped
 Transform:
@@ -20965,6 +21257,25 @@ MonoBehaviour:
   tooltipDescription: My favorite toy that dad got me recently. I wonder where I
     should put it....
   tooltipPrefab: {fileID: 494690698262876036, guid: e602d47b47433428680e3e212c3d2575, type: 3}
+--- !u!114 &1441656066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831127360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _rigidbody: {fileID: 831127363}
+  _snapPoseDelegate: {fileID: 0}
+  _movementProvider: {fileID: 0}
 --- !u!1 &1444131164
 GameObject:
   m_ObjectHideFlags: 0
@@ -21260,6 +21571,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1493136306}
     m_Modifications:
+    - target: {fileID: 1293050185675339356, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1465379204}
     - target: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.20000002
@@ -21348,16 +21663,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookDrop3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2627787096142250264, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 150022134776423284, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+    - {fileID: 4132267631644103558, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1465379206}
   m_SourcePrefab: {fileID: 100100000, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
 --- !u!4 &1465379203 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1898837504586081849, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
   m_PrefabInstance: {fileID: 1465379202}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1465379204 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2371638943745920676, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1465379202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1465379205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7089535001306182016, guid: 5c10a98b6cb363546b313c805319463e, type: 3}
+  m_PrefabInstance: {fileID: 1465379202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1465379206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465379205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2756c251a8363df4f9d4b30ee6414bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 0}
+  _rigidbody: {fileID: 0}
+  _distanceThreshold: 0.01
+  _snapPoseTransform: {fileID: 0}
+  _defaultInteractable: {fileID: 0}
+  _timeOutInteractable: {fileID: 0}
+  _timeOut: 0
 --- !u!1 &1465505950
 GameObject:
   m_ObjectHideFlags: 0
@@ -22383,6 +22738,25 @@ MonoBehaviour:
   tooltipName: TV
   tooltipDescription: A small TV for my room. Danny Phantom is on at 5pm everyday!
   tooltipPrefab: {fileID: 494690698262876036, guid: e602d47b47433428680e3e212c3d2575, type: 3}
+--- !u!114 &1540595075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540595062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _rigidbody: {fileID: 1540595065}
+  _snapPoseDelegate: {fileID: 0}
+  _movementProvider: {fileID: 0}
 --- !u!1 &1541483056
 GameObject:
   m_ObjectHideFlags: 0
@@ -28556,6 +28930,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1346293658175057715, guid: eeea2201d68467f489dabe4e26024fbe, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2039753831}
+    - targetCorrespondingSourceObject: {fileID: 1346293658175057715, guid: eeea2201d68467f489dabe4e26024fbe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2039753832}
   m_SourcePrefab: {fileID: 100100000, guid: eeea2201d68467f489dabe4e26024fbe, type: 3}
 --- !u!4 &2039753830 stripped
 Transform:
@@ -28578,6 +28955,25 @@ MonoBehaviour:
   tooltipDescription: A story about a strange cat wearing a weird hat causing chaos
     in a siblings household. I wonder if that cat will ever visit here someday.
   tooltipPrefab: {fileID: 494690698262876036, guid: e602d47b47433428680e3e212c3d2575, type: 3}
+--- !u!114 &2039753832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372930177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _rigidbody: {fileID: 1372930179}
+  _snapPoseDelegate: {fileID: 0}
+  _movementProvider: {fileID: 0}
 --- !u!1 &2040293891
 GameObject:
   m_ObjectHideFlags: 0
