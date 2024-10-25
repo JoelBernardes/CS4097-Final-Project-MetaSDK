@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-public List<SnapInteractable> interactables; // Assign all interactables in the Inspector
-    public SnapInteractor snapInteractor; // Assign the Snap Interactor here
+    public List<SnapInteractable> interactables; // Assign all interactables in the Inspector
+    public List<SnapInteractor> interactors; // Assign all Snap Interactor in the Inspector
 
     private HashSet<SnapInteractable> placedInteractables = new HashSet<SnapInteractable>();
 
@@ -32,7 +32,37 @@ public List<SnapInteractable> interactables; // Assign all interactables in the 
 
     private void AllInteractablesPlaced()
     {
+        bool allCorrect = true;
+        bool alreadyChecked = false;
         Debug.Log("All Snap Interactables have been placed!");
         // Add your logic for when all interactables are placed
+        foreach(var socket in interactables)
+        {
+            foreach(var item in interactors)
+            {
+                if (socket.transform.position == item.transform.position) //Items are in the same location
+                {
+                    if (socket.tag != item.tag) //Checks to see if the item belongs in that spot
+                    {
+                       //Not in the right location
+                       allCorrect = false;
+                       break;
+                    }
+                    else
+                    {
+                        alreadyChecked = true;
+                    }
+                }
+                if (alreadyChecked) //If we checked the location and its all good, go to next drop zone
+                {
+                    break;
+                }
+            }
+            
+        }
+        if (allCorrect)
+        {
+            //Go to the next scene
+        }
     }
 }
