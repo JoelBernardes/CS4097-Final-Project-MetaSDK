@@ -8,6 +8,9 @@ public class LevelManager : MonoBehaviour
     public List<SnapInteractable> interactables; // Assign all interactables in the Inspector
     public List<SnapInteractor> interactors; // Assign all Snap Interactor in the Inspector
 
+    public ParticleSystem winParticle;
+    public AudioSource audio;
+
     private HashSet<SnapInteractable> placedInteractables = new HashSet<SnapInteractable>();
 
 
@@ -32,17 +35,18 @@ public class LevelManager : MonoBehaviour
 
     private void AllInteractablesPlaced()
     {
-        bool allCorrect = true;
-        bool alreadyChecked = false;
+        bool allCorrect = false;
+        //bool alreadyChecked = false;
         Debug.Log("All Snap Interactables have been placed!");
         // Add your logic for when all interactables are placed
-        foreach(var socket in interactables)
+        foreach (var socket in interactables)
         {
-            foreach(var item in interactors)
+            foreach (var item in interactors)
             {
                 if (socket.transform.position == item.transform.position) //Items are in the same location
                 {
-                    if (socket.tag != item.tag) //Checks to see if the item belongs in that spot
+                    /*
+                     * if (socket.tag != item.tag) //Checks to see if the item belongs in that spot
                     {
                        //Not in the right location
                        allCorrect = false;
@@ -52,17 +56,29 @@ public class LevelManager : MonoBehaviour
                     {
                         alreadyChecked = true;
                     }
+                    */
+                    allCorrect = true;
+                    break;
                 }
-                if (alreadyChecked) //If we checked the location and its all good, go to next drop zone
+                else
+                {
+                    allCorrect = false;
+                }
+                /*
+                 * if (alreadyChecked) //If we checked the location and its all good, go to next drop zone
                 {
                     break;
                 }
+                */
             }
-            
+
         }
         if (allCorrect)
         {
-            //Go to the next scene
+            var target = Camera.main.transform;
+            Instantiate(winParticle, target.position, target.rotation);
+            audio.Play();
+            //Go to the next scene once everything is done
         }
     }
 }
