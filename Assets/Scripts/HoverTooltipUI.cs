@@ -12,46 +12,19 @@ public class HoverTooltipUI : MonoBehaviour
 
     void Update()
     {
-        CheckForHover();
     }
 
-    private void CheckForHover()
+    public void ShowTooltip()
     {
-        // Cast a ray from the controller (replace with your controller's transform)
-        RaycastHit hit;
-        Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward); // Change this to your controller's position and direction
-        
-        if (Physics.Raycast(ray, out hit))
+        tooltipInstance = Instantiate(tooltipPrefab, this.transform.position + new Vector3(1, 1, 0), this.transform.rotation);
+        TooltipUI tooltipUI = tooltipInstance.GetComponent<TooltipUI>();
+        if (tooltipUI != null)
         {
-            if (hit.transform == transform)
-            {
-                ShowTooltip(hit.point); // Show the tooltip at the hit point
-            }
-            else
-            {
-                HideTooltip();
-            }
-        }
-        else
-        {
-            HideTooltip();
+            tooltipUI.SetTooltip(tooltipName, tooltipDescription);
         }
     }
 
-    private void ShowTooltip(Vector3 position)
-    {
-        if (tooltipInstance == null)
-        {
-            tooltipInstance = Instantiate(tooltipPrefab, position + new Vector3(10, 5, 0), Quaternion.identity);
-            TooltipUI tooltipUI = tooltipInstance.GetComponent<TooltipUI>();
-            if (tooltipUI != null)
-            {
-                tooltipUI.SetTooltip(tooltipName, tooltipDescription);
-            }
-        }
-    }
-
-    private void HideTooltip()
+    public void HideTooltip()
     {
         if (tooltipInstance != null)
         {
