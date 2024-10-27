@@ -75,8 +75,7 @@ public class LevelManager : MonoBehaviour
         }
         if (allCorrect)
         {
-            var target = Camera.main.transform;
-            Instantiate(winParticle, target.position, target.rotation);
+            winParticle.Play();
             audio.Play();
             //Go to the next scene once everything is done
         }

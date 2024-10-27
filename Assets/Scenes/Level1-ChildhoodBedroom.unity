@@ -12623,7 +12623,7 @@ MonoBehaviour:
   - {fileID: 2039753834}
   - {fileID: 299045575}
   - {fileID: 1119511704}
-  winParticle: {fileID: 0}
+  winParticle: {fileID: 7931953535363458871, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
   audio: {fileID: 890408580}
 --- !u!82 &890408580
 AudioSource:
@@ -31050,6 +31050,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89893e4928b4fdf4cb7fb21c8d7c3727, type: 3}
+--- !u!1001 &7410065577979634847
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3099967057159009790, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3836032271658516060, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
+      propertyPath: m_Name
+      value: Confetti
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -31069,3 +31126,4 @@ SceneRoots:
   - {fileID: 1960838945}
   - {fileID: 1337019276}
   - {fileID: 890408578}
+  - {fileID: 7410065577979634847}
