@@ -23,6 +23,11 @@ public class HoverTooltipUI : MonoBehaviour
     // spawns in the tooltip prefab UI at the set offset from the object
     public void ShowTooltip()
     {
+        if (tooltipInstance != null)
+        {
+            return;
+        }
+
         tooltipInstance = Instantiate(tooltipPrefab, this.transform.position + new Vector3(xOffset, yOffset, 0), tooltipPrefab.transform.rotation);
         TooltipUI tooltipUI = tooltipInstance.GetComponent<TooltipUI>();
         tooltipInstance.transform.LookAt(GameObject.FindGameObjectWithTag("MainCamera").transform.position);
