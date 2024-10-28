@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Oculus.Interaction;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class LevelManager : MonoBehaviour
 
     public ParticleSystem winParticle;
     public AudioSource audio;
+
+    float currentTime = 0f;
+    float timeBeforeTransition = 10f;
 
     private HashSet<SnapInteractable> placedInteractables = new HashSet<SnapInteractable>();
 
@@ -75,9 +79,14 @@ public class LevelManager : MonoBehaviour
         }
         if (allCorrect)
         {
+            currentTime += Time.deltaTime;
             winParticle.Play();
             audio.Play();
             //Go to the next scene once everything is done
+            if (currentTime >= timeBeforeTransition)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
     }
 }
