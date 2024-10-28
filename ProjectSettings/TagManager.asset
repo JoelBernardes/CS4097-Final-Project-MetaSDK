@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Snap Zone
+  - Ground
+  - Locomotion
+  - PassThrough
+  - PassThroughButton
+  - LocoButton
+  - LocoText
+  - Bed
+  - Book
+  - TV
+  - Stand
   layers:
   - Default
   - TransparentFX

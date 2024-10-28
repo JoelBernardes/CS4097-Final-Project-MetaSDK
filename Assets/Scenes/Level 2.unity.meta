@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/Level 2.unity.meta
 guid: e1b5fc2c27fe2b7449ceca5c2511e63e
+========
+guid: 3035f5ae91939d14fa6c42e9f9e5edb8
+folderAsset: yes
+>>>>>>>> combination-sequence:Assets/Office Pack.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
