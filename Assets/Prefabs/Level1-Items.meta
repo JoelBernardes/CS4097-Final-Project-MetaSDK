@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/Level1-Items.meta
 guid: 6d223d2c706da4879b04bf0d96bd04cd
+========
+guid: 81f61adfe01c8da41a197bfd9719d4d0
+>>>>>>>> level-2-design:Assets/Prefabs/EmaceArt.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

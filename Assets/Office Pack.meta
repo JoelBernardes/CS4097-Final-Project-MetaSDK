@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Office Pack.meta
 guid: 3035f5ae91939d14fa6c42e9f9e5edb8
 folderAsset: yes
+========
+guid: 570f3df2f3d992e49896101729f7946c
+>>>>>>>> level-2-design:Assets/Prefabs/EmaceArt/it`s 80`s_FREE/Textures/debug.log.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: fdc71afaf3781d74491b84a8b7752131
+<<<<<<<< HEAD:Assets/Office Pack/Models/All In One PC.meta
+guid: 0b213d12013c1fa4c98d649fc9a45a8f
+========
+guid: 4c62c88956a244f41a997dff51e9332e
+>>>>>>>> level-2-design:Assets/Prefabs/9 Doors and Drawers.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

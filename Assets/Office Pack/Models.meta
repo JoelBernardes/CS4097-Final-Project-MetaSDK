@@ -1,6 +1,10 @@
 fileFormatVersion: 2
-guid: 57979e71e1d824141a78d6f50fc6f97e
+<<<<<<<< HEAD:Assets/Office Pack/Models.meta
+guid: 94a34edaf4a4ac5429e763f9a6b23340
 folderAsset: yes
+========
+guid: 92c8a4572202600408c78970e26cd4bc
+>>>>>>>> level-2-design:Assets/Scenes/doorscene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
