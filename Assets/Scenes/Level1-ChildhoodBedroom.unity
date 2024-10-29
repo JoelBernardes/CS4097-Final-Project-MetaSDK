@@ -17792,6 +17792,8 @@ MonoBehaviour:
   tooltipName: Blue Pen
   tooltipDescription: If only I had a place to put this pen...
   tooltipPrefab: {fileID: 494690698262876036, guid: e602d47b47433428680e3e212c3d2575, type: 3}
+  xOffset: 0.5
+  yOffset: 0.5
 --- !u!82 &1020462348
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24353,6 +24355,8 @@ MonoBehaviour:
   tooltipName: Cube
   tooltipDescription: This is a test grabbable object for MetaSDK
   tooltipPrefab: {fileID: 494690698262876036, guid: e602d47b47433428680e3e212c3d2575, type: 3}
+  xOffset: 0.5
+  yOffset: 0.5
 --- !u!1 &1348732314
 GameObject:
   m_ObjectHideFlags: 0
@@ -31351,6 +31355,8 @@ MonoBehaviour:
   tooltipName: Empty Pen Holder
   tooltipDescription: Seems like it's missing my lucky blue pen...
   tooltipPrefab: {fileID: 494690698262876036, guid: e602d47b47433428680e3e212c3d2575, type: 3}
+  xOffset: 0.5
+  yOffset: 0.5
 --- !u!82 &1684093488
 AudioSource:
   m_ObjectHideFlags: 0
@@ -31553,8 +31559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c39965f92aa7f4fbd32144bc7894a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  combinedItemPrefab: {fileID: 1330479144126072357, guid: 9d7c8ef2893695b409dd336818400b8e, type: 3}
-  itemToCombine: {fileID: 1020462341}
+  combinedItemsPrefab: []
+  itemsToCombine: []
 --- !u!1 &1686998569
 GameObject:
   m_ObjectHideFlags: 0
@@ -39926,10 +39932,6 @@ PrefabInstance:
     - target: {fileID: 3836032271658516060, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7931953535363458871, guid: 47e233ae4d03eb540819e8778c0e6477, type: 3}
-      propertyPath: playOnAwake
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
