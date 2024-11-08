@@ -34,10 +34,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.21, y: -0, z: 5.886}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1682286598226926748}
+  - {fileID: 1935619186916082230}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7724923667556668228
@@ -269,7 +269,7 @@ MonoBehaviour:
   _candidateTiebreaker: {fileID: 0}
   _maxIterationsPerFrame: 3
   _data: {fileID: 0}
-  _pointableElement: {fileID: 0}
+  _pointableElement: {fileID: 6306539875712515502}
   _rigidbody: {fileID: 7266220704738886102}
   _distanceThreshold: 0.01
   _snapPoseTransform: {fileID: 0}
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointable: {fileID: 5173642625443209047}
+  _pointable: {fileID: 6306539875712515502}
   _whenRelease:
     m_PersistentCalls:
       m_Calls: []
@@ -324,7 +324,31 @@ MonoBehaviour:
         m_CallState: 2
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6885707757299112687}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 378206026450735981}
+        m_TargetAssemblyTypeName: HoverTooltipUI, Assembly-CSharp
+        m_MethodName: HideTooltip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -334,7 +358,7 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &6226309601126489190
+--- !u!1 &9058360531611198122
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,11 +366,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1682286598226926748}
-  - component: {fileID: 7861011954275647953}
-  - component: {fileID: 5173642625443209047}
-  - component: {fileID: 6232094859101796310}
-  - component: {fileID: 9178613362855408293}
+  - component: {fileID: 1935619186916082230}
+  - component: {fileID: 8926538287833517411}
+  - component: {fileID: 6306539875712515502}
+  - component: {fileID: 992478617333607493}
+  - component: {fileID: 3786261137654585347}
   m_Layer: 0
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
@@ -354,13 +378,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1682286598226926748
+--- !u!4 &1935619186916082230
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6226309601126489190}
+  m_GameObject: {fileID: 9058360531611198122}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -369,33 +393,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8842931848679469237}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7861011954275647953
+--- !u!114 &8926538287833517411
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6226309601126489190}
+  m_GameObject: {fileID: 9058360531611198122}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: c773d5cc-f8d5-4234-ac4c-52994c1862ae
+  instanceId: 51a824ec-8ca3-4a98-bb24-4468219b1ad4
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
---- !u!114 &5173642625443209047
+--- !u!114 &6306539875712515502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6226309601126489190}
+  m_GameObject: {fileID: 9058360531611198122}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
@@ -411,13 +435,13 @@ MonoBehaviour:
   _rigidbody: {fileID: 7266220704738886102}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
---- !u!114 &6232094859101796310
+--- !u!114 &992478617333607493
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6226309601126489190}
+  m_GameObject: {fileID: 9058360531611198122}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
@@ -427,7 +451,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 5173642625443209047}
+  _pointableElement: {fileID: 6306539875712515502}
   _rigidbody: {fileID: 7266220704738886102}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -452,13 +476,13 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 0
   _handGrabPoses: []
---- !u!114 &9178613362855408293
+--- !u!114 &3786261137654585347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6226309601126489190}
+  m_GameObject: {fileID: 9058360531611198122}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
@@ -468,7 +492,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 5173642625443209047}
+  _pointableElement: {fileID: 6306539875712515502}
   _rigidbody: {fileID: 7266220704738886102}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
