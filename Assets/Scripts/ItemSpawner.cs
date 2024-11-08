@@ -8,6 +8,8 @@ public class ItemSpawner : MonoBehaviour
     // List of GameObjects to spawn
     public List<GameObject> objectsToSpawn;
 
+    public AudioSource boxSource;
+
     // Flag to control spawning
     private bool canSpawn = true;
 
@@ -35,6 +37,7 @@ public class ItemSpawner : MonoBehaviour
 
             // Optionally remove the spawned object from the list
             objectsToSpawn.RemoveAt(randomIndex);
+            boxSource.Play();
         }
 
         // Set canSpawn to false and wait for 1 second
