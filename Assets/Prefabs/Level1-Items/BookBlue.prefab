@@ -37,7 +37,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 942789038864345050}
+  - {fileID: 5571766692964870146}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1556416127389453115
@@ -269,7 +269,7 @@ MonoBehaviour:
   _candidateTiebreaker: {fileID: 0}
   _maxIterationsPerFrame: 3
   _data: {fileID: 0}
-  _pointableElement: {fileID: 0}
+  _pointableElement: {fileID: 6399971527014461714}
   _rigidbody: {fileID: 6701204788444198189}
   _distanceThreshold: 0.01
   _snapPoseTransform: {fileID: 0}
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointable: {fileID: 2240016319671061558}
+  _pointable: {fileID: 6399971527014461714}
   _whenRelease:
     m_PersistentCalls:
       m_Calls: []
@@ -324,7 +324,31 @@ MonoBehaviour:
         m_CallState: 2
   _whenSelect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5896195861601786991}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7535603927795814437}
+        m_TargetAssemblyTypeName: HoverTooltipUI, Assembly-CSharp
+        m_MethodName: HideTooltip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
       m_Calls: []
@@ -334,7 +358,7 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &5561456332442571095
+--- !u!1 &4286688256596821090
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,11 +366,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 942789038864345050}
-  - component: {fileID: 12892822772971535}
-  - component: {fileID: 2240016319671061558}
-  - component: {fileID: 8015971438626907877}
-  - component: {fileID: 4586740123274041321}
+  - component: {fileID: 5571766692964870146}
+  - component: {fileID: 4118878425802578056}
+  - component: {fileID: 6399971527014461714}
+  - component: {fileID: 8072388877545315258}
+  - component: {fileID: 8990656554717922091}
   m_Layer: 0
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
@@ -354,13 +378,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &942789038864345050
+--- !u!4 &5571766692964870146
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5561456332442571095}
+  m_GameObject: {fileID: 4286688256596821090}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -369,33 +393,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2465258648875811998}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &12892822772971535
+--- !u!114 &4118878425802578056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5561456332442571095}
+  m_GameObject: {fileID: 4286688256596821090}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 9ebe4d21-4aba-4e6e-abee-457bbe90fd60
+  instanceId: 36b1042d-5c1a-4eb5-a6f7-6a10c06bc740
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8
     _installationVariants:
     - _memberName: mode
       _value: '{"value__":0}'
---- !u!114 &2240016319671061558
+--- !u!114 &6399971527014461714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5561456332442571095}
+  m_GameObject: {fileID: 4286688256596821090}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
@@ -411,13 +435,13 @@ MonoBehaviour:
   _rigidbody: {fileID: 6701204788444198189}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
---- !u!114 &8015971438626907877
+--- !u!114 &8072388877545315258
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5561456332442571095}
+  m_GameObject: {fileID: 4286688256596821090}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
@@ -427,7 +451,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 2240016319671061558}
+  _pointableElement: {fileID: 6399971527014461714}
   _rigidbody: {fileID: 6701204788444198189}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -452,13 +476,13 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 0
   _handGrabPoses: []
---- !u!114 &4586740123274041321
+--- !u!114 &8990656554717922091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5561456332442571095}
+  m_GameObject: {fileID: 4286688256596821090}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
@@ -468,7 +492,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 2240016319671061558}
+  _pointableElement: {fileID: 6399971527014461714}
   _rigidbody: {fileID: 6701204788444198189}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
