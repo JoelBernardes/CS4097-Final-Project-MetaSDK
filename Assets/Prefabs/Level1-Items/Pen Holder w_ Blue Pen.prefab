@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7136400734333620461}
   m_Layer: 0
   m_Name: Pen Holder w_ Blue Pen
-  m_TagString: Untagged
+  m_TagString: PenHolderWithPen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,7 +248,7 @@ MonoBehaviour:
   _candidateTiebreaker: {fileID: 0}
   _maxIterationsPerFrame: 3
   _data: {fileID: 0}
-  _pointableElement: {fileID: 0}
+  _pointableElement: {fileID: 1436498267574078057}
   _rigidbody: {fileID: 1054993645625609122}
   _distanceThreshold: 0.01
   _snapPoseTransform: {fileID: 0}
@@ -722,7 +722,7 @@ MonoBehaviour:
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
   _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 0}
+  _targetTransform: {fileID: 8791388629610526624}
   _maxGrabPoints: -1
   _rigidbody: {fileID: 0}
   _kinematicWhileSelected: 1
@@ -785,7 +785,7 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
   _pointableElement: {fileID: 1436498267574078057}
-  _rigidbody: {fileID: 0}
+  _rigidbody: {fileID: 1054993645625609122}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
   _releaseDistance: 0

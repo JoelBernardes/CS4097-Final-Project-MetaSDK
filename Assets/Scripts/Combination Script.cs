@@ -5,13 +5,10 @@ using UnityEngine;
 public class CombinationScript : MonoBehaviour
 {
     public GameObject combinedItemPrefab;
-    public GameObject itemToCombine;
-
-    bool canCombine = false;
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.name == itemToCombine.name)
+        if (other.gameObject.tag == gameObject.tag)
         {
             CombineItems(combinedItemPrefab, other.gameObject);
         }
