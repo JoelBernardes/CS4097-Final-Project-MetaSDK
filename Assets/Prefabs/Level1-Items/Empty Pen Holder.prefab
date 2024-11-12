@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 5876633594319856402}
   m_Layer: 0
   m_Name: Empty Pen Holder
-  m_TagString: Untagged
+  m_TagString: PenHolder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -558,9 +558,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ItemChecker, Assembly-CSharp
+        m_MethodName: grabbedItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenUnselect:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ItemChecker, Assembly-CSharp
+        m_MethodName: releaseItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenMove:
     m_PersistentCalls:
       m_Calls: []
@@ -580,7 +604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combinedItemPrefab: {fileID: 1330479144126072357, guid: b9a6192a8429db249ae26eb0ecaf2e48, type: 3}
-  itemToCombine: {fileID: 5155504446513574660, guid: 2031dcac6f039455cba6b66d8b784dc1, type: 3}
 --- !u!1 &6946088893627760828
 GameObject:
   m_ObjectHideFlags: 0
