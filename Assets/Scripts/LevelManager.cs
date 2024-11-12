@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour
     private void AllInteractablesPlaced()
     {
         //bool alreadyChecked = false;
-        Debug.Log("All Snap Interactables have been placed!");
+        Debug.Log("Checking Placement...");
         // Add your logic for when all interactables are placed
         allCorrect = false;
         foreach (var socket in dropZones)
@@ -34,10 +34,14 @@ public class LevelManager : MonoBehaviour
             if (!socket.GetComponent<DropZoneChecker>().getOccupancy())
             {
                 allCorrect = false;
-            } else //check to see if right object is in right place
+                Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have an item in it.");
+            }
+            else //check to see if right object is in right place
             {
-                if(socket.GetComponent<DropZoneChecker>().getItemInZone().tag != socket.tag) //wrong item in slot
+                allCorrect = true;
+                if(!socket.GetComponent<DropZoneChecker>().correctItemInZone()) //wrong item in slot
                 {
+                    Debug.Log($"Snap Interactable: {socket.gameObject.name} is not in the right place.");
                     allCorrect = false;
                 }
             }
@@ -76,6 +80,7 @@ public class LevelManager : MonoBehaviour
         }
         if (allCorrect)
         {
+            Debug.Log("All Snap Interactables have been placed!");
             levelComplete();
         }
     }

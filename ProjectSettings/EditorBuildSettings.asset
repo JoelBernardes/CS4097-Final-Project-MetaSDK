@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1-ChildhoodBedroom.unity
     guid: f621873df421d9144a6adc39f3ae21bb
   - enabled: 1
-    path: Assets/Scenes/New Scene.unity
-    guid: 7bad1395a93c13849a00131fa97eab7b
+    path: Assets/Scenes/Level 2.unity
+    guid: e1b5fc2c27fe2b7449ceca5c2511e63e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 785a49eca7357d84aa7733cc87dfa53c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0c62af9830409cc4190d8c29f205b8f4, type: 2}

@@ -5,39 +5,63 @@ using UnityEngine;
 public class DropZoneChecker : MonoBehaviour
 {
     bool dropZoneOccupied = false;
-    GameObject itemInZone;
-    GameObject currentItem;
-
-    public void addItem()
-    {
-        dropZoneOccupied = true;
-        itemInZone = currentItem;
-    }
-
-    public void removeItem()
-    {
-        dropZoneOccupied = false;
-        itemInZone = null;
-    }
+    bool corectItem = false;
+    bool isHolding = true;
 
     public bool getOccupancy()
     {
         return dropZoneOccupied;
     }
 
-    public GameObject getItemInZone()
+    public bool correctItemInZone()
     {
-        return itemInZone;
+        return corectItem;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        currentItem = other.gameObject;
-        Debug.Log(other.gameObject.name);
+        if (other.gameObject.tag == gameObject.tag)
+        {
+            //Debug.Log("Is Snap Interactable grabbed: " + isHolding);
+            if (!isHolding || other.gameObject.GetComponent<Rigidbody>().isKinematic)
+            {
+                //Debug.Log("Added Item: " + other.gameObject.name);
+                dropZoneOccupied = true;
+                if (other.gameObject.tag == gameObject.tag)
+                {
+                    //Debug.Log("Correct item!");
+                    corectItem = true;
+                }
+                else
+                {
+                    //Debug.Log("Incorrect Item");
+                    corectItem = false;
+                }
+            }
+            else
+            {
+                isHolding = true;
+                dropZoneOccupied = false;
+            }
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        removeItem();
+        if (other.gameObject.tag == gameObject.tag)
+        {
+            if (!other.gameObject.GetComponent<Rigidbody>().isKinematic)
+            {
+                Debug.Log("Removing Snap Interactable");
+                dropZoneOccupied = false;
+                isHolding = true;
+                corectItem = false;
+            }
+        }
+    }
+
+    public void addItem()
+    {
+        isHolding = false;
     }
 }
