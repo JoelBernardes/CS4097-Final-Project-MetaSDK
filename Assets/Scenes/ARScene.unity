@@ -9616,7 +9616,19 @@ MonoBehaviour:
       m_Calls: []
   <RoomCreatedEvent>k__BackingField:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1688610823}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   <RoomUpdatedEvent>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
@@ -14327,11 +14339,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnOnStart: 1
-  SpawnObject: {fileID: 8240749116634132180, guid: 7cab184fcd1d83f42bed80f9db3e36ee, type: 3}
-  SpawnAmount: 3
+  SpawnObject: {fileID: 6892704309689592709, guid: 033f59fd986d74d1aaf3ac4331154e93, type: 3}
+  SpawnAmount: 5
   MaxIterations: 1000
   SpawnLocations: 3
-  Labels: 1
+  Labels: 856
   CheckOverlaps: 0
   OverrideBounds: -1
   LayerMask:
