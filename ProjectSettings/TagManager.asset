@@ -17,6 +17,9 @@ TagManager:
   - Stand
   - PenHolder
   - PenHolderWithPen
+  - Desk
+  - Wall
+  - Controller
   layers:
   - Default
   - TransparentFX
