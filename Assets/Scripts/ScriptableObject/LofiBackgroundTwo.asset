@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa16a2985d1e70740a4c545aa1ad849e, type: 3}
+  m_Name: LofiBackgroundTwo
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 58d33f2cb60834f4e803d35994d4ad7e, type: 3}
+  musicArt: {fileID: 21300000, guid: 0b9c7756f8b584ffdb468bc3fc789b9a, type: 3}

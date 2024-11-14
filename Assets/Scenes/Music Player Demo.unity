@@ -1854,6 +1854,8 @@ MonoBehaviour:
   playlist:
   - {fileID: 11400000, guid: 2246d802546404b4ab0813a362399ab0, type: 2}
   - {fileID: 11400000, guid: 3dd26e9fa85b6824e98d1432d71a4d78, type: 2}
+  - {fileID: 11400000, guid: bf0a1565e457c4ba2b2e42b6d5d9f7f1, type: 2}
+  - {fileID: 11400000, guid: 6223e30ade20c4c619bd7b97a3c80413, type: 2}
 --- !u!4 &2127019708
 Transform:
   m_ObjectHideFlags: 0
