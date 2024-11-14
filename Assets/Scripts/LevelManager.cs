@@ -18,6 +18,13 @@ public class LevelManager : MonoBehaviour
     bool allCorrect = false;
     bool firstTimePlayingEffects = true;
 
+    int totalScenes;
+
+    void Start()
+    {
+        totalScenes = SceneManager.sceneCountInBuildSettings;
+    }
+
     void Update()
     {
         AllInteractablesPlaced();
@@ -98,7 +105,14 @@ public class LevelManager : MonoBehaviour
         //Go to the next scene once everything is done
         if (currentTime >= timeBeforeTransition)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (SceneManager.GetActiveScene().buildIndex + 1 > totalScenes)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
+        else
+        {
+            Debug.Log("End of demo");
         }
     }
 }
