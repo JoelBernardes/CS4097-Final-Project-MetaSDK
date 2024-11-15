@@ -23,7 +23,7 @@ public class DropZoneChecker : MonoBehaviour
         if (other.gameObject.tag == gameObject.tag)
         {
             //Debug.Log("Is Snap Interactable grabbed: " + isHolding);
-            if (!isHolding || other.gameObject.GetComponent<Rigidbody>().isKinematic)
+            if (!isHolding && other.gameObject.GetComponent<Rigidbody>().isKinematic)
             {
                 //Debug.Log("Added Item: " + other.gameObject.name);
                 dropZoneOccupied = true;
