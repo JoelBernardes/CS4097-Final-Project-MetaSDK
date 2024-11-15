@@ -63,6 +63,7 @@ public class SongPlayerManager : MonoBehaviour
             if (isPaused)
             {
                 playPauseButton.GetComponent<ChangeImage>().changeImageSprite();
+                isPaused = false;
             }
         } else
         {
@@ -70,6 +71,7 @@ public class SongPlayerManager : MonoBehaviour
             if (isPaused)
             {
                 playPauseButton.GetComponent<ChangeImage>().changeImageSprite();
+                isPaused = false;
             }
         }
         songArt.sprite = playlist[currentTrack].musicArt;
@@ -99,6 +101,7 @@ public class SongPlayerManager : MonoBehaviour
             if (isPaused)
             {
                 playPauseButton.GetComponent<ChangeImage>().changeImageSprite();
+                isPaused = false;
             }
         } else
         {
@@ -106,6 +109,7 @@ public class SongPlayerManager : MonoBehaviour
             if (isPaused)
             {
                 playPauseButton.GetComponent<ChangeImage>().changeImageSprite();
+                isPaused = false;
             }
         }
         songArt.sprite = playlist[currentTrack].musicArt;
