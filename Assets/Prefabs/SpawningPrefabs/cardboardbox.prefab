@@ -67,15 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfc819584aab48889056fdcf72002fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToSpawn:
-  - {fileID: 3690910620428189759, guid: 33be206af3eeb402eafbaba748a4d3eb, type: 3}
-  - {fileID: 7738744186548441550, guid: 80872c6dd156f544788e44da2ac91219, type: 3}
-  - {fileID: 2989698565783395876, guid: 164e398b45d0b2e45b7937efbe8699ce, type: 3}
-  - {fileID: 1346293658175057715, guid: eeea2201d68467f489dabe4e26024fbe, type: 3}
-  - {fileID: 967016591553411399, guid: 667648ba453719e4683cbbab5e2b30c8, type: 3}
-  - {fileID: 7702571585501017793, guid: 11a98729fc7764f07909abc2101135cd, type: 3}
-  - {fileID: 5155504446513574660, guid: 2031dcac6f039455cba6b66d8b784dc1, type: 3}
-  - {fileID: 6170679168956608377, guid: 4a6e92c3df1184c61b6304b225b250d5, type: 3}
+  objectsToSpawn: []
   boxSource: {fileID: 2076520002529570624}
 --- !u!82 &2076520002529570624
 AudioSource:
