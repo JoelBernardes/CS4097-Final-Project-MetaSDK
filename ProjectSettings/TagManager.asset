@@ -17,6 +17,7 @@ TagManager:
   - Stand
   - PenHolder
   - PenHolderWithPen
+  - Selector
   layers:
   - Default
   - TransparentFX
