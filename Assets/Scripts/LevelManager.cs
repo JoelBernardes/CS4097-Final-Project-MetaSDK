@@ -117,7 +117,7 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("End of demo");
+            SceneManager.LoadScene(SceneManager.GetSceneByName("MainMenu").buildIndex);
         }
     }
 }

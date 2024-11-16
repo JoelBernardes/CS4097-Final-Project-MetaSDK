@@ -12742,6 +12742,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 378206026450735981, guid: 33be206af3eeb402eafbaba748a4d3eb, type: 3}
+      propertyPath: tooltipName
+      value: Level Selector
+      objectReference: {fileID: 0}
+    - target: {fileID: 378206026450735981, guid: 33be206af3eeb402eafbaba748a4d3eb, type: 3}
+      propertyPath: tooltipDescription
+      value: Place this on the level that you want to play!
+      objectReference: {fileID: 0}
     - target: {fileID: 3690910620428189759, guid: 33be206af3eeb402eafbaba748a4d3eb, type: 3}
       propertyPath: m_Name
       value: toy_001
