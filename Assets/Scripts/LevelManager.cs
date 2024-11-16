@@ -13,10 +13,20 @@ public class LevelManager : MonoBehaviour
     public AudioSource audio;
 
     float currentTime = 0f;
-    float timeBeforeTransition = 10f;
+    float timeBeforeTransition = 5f;
 
     bool allCorrect = false;
     bool firstTimePlayingEffects = true;
+
+    int totalScenes;
+
+    void Start()
+    {
+        totalScenes = SceneManager.sceneCountInBuildSettings;
+        Debug.Log("Current Scene number: " + SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Next Scene: " + (SceneManager.GetActiveScene().buildIndex + 1)); 
+        Debug.Log("Total number of scenes: " + (totalScenes - 1));
+    }
 
     void Update()
     {
@@ -26,22 +36,23 @@ public class LevelManager : MonoBehaviour
     private void AllInteractablesPlaced()
     {
         //bool alreadyChecked = false;
-        Debug.Log("Checking Placement...");
+        //Debug.Log("Checking Placement...");
         // Add your logic for when all interactables are placed
         allCorrect = false;
         foreach (var socket in dropZones)
         {
+            //Debug.Log("Checking Snap Interactable: " + socket.name);
             if (!socket.GetComponent<DropZoneChecker>().getOccupancy())
             {
                 allCorrect = false;
-                Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have an item in it.");
+                //Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have an item in it.");
             }
             else //check to see if right object is in right place
             {
                 allCorrect = true;
                 if(!socket.GetComponent<DropZoneChecker>().correctItemInZone()) //wrong item in slot
                 {
-                    Debug.Log($"Snap Interactable: {socket.gameObject.name} is not in the right place.");
+                    //Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have the right item in it.");
                     allCorrect = false;
                 }
             }
@@ -75,6 +86,7 @@ public class LevelManager : MonoBehaviour
             //}
             if (!allCorrect)
             {
+                Debug.Log("Level Not Over");
                 break;
             }
         }
@@ -98,7 +110,14 @@ public class LevelManager : MonoBehaviour
         //Go to the next scene once everything is done
         if (currentTime >= timeBeforeTransition)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (SceneManager.GetActiveScene().buildIndex + 1 <= totalScenes - 1)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
+        else
+        {
+            Debug.Log("End of demo");
         }
     }
 }
