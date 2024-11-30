@@ -21,6 +21,8 @@ TagManager:
   - Desk
   - Wall
   - Controller
+  - Fan
+  - Plant
   layers:
   - Default
   - TransparentFX

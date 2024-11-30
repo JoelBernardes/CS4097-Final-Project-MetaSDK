@@ -14288,6 +14288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodTile (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 9016712329457952068, guid: 89893e4928b4fdf4cb7fb21c8d7c3727, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
