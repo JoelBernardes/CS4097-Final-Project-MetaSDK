@@ -21,6 +21,8 @@ TagManager:
   - Desk
   - Wall
   - Controller
+  - LeftHand
+  - RightHand
   layers:
   - Default
   - TransparentFX
