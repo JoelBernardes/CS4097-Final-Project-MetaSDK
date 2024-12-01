@@ -33,7 +33,8 @@ public class ItemSpawner : MonoBehaviour
             GameObject objectToSpawn = objectsToSpawn[randomIndex];
 
             // Instantiate the object at the spawner's position and rotation
-            Instantiate(objectToSpawn, transform.position, transform.rotation);
+            GameObject spawnedIn = Instantiate(objectToSpawn, transform.position, transform.rotation);
+            spawnedIn.SetActive(true);
 
             // Optionally remove the spawned object from the list
             objectsToSpawn.RemoveAt(randomIndex);

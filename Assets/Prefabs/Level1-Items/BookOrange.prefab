@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 6040740690416629433}
   - component: {fileID: 3707025411613192739}
   - component: {fileID: 6597531185673020510}
+  - component: {fileID: 5463514656234061795}
+  - component: {fileID: 2756540898155867771}
   m_Layer: 0
   m_Name: BookOrange
   m_TagString: Book
@@ -348,6 +350,36 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5463514656234061795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346293658175057715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ba943c4e7b0c246874e004c901d2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frequency: 1
+  amplitude: 1
+  duration: 1
+--- !u!114 &2756540898155867771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346293658175057715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6d2e465801c68448987b045552102a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _controller: 1
+  _button: 2
+  interactable: {fileID: 0}
 --- !u!1 &6586410656590161424
 GameObject:
   m_ObjectHideFlags: 0

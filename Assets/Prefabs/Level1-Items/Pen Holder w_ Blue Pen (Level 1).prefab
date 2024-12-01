@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 3579870960727626246}
   - component: {fileID: 533341909715331095}
   - component: {fileID: 7136400734333620461}
+  - component: {fileID: 3930667533102383088}
+  - component: {fileID: 5953770391197920883}
   m_Layer: 0
   m_Name: Pen Holder w_ Blue Pen (Level 1)
   m_TagString: PenHolderWithPen
@@ -327,6 +329,36 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3930667533102383088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330479144126072357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ba943c4e7b0c246874e004c901d2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frequency: 1
+  amplitude: 1
+  duration: 1
+--- !u!114 &5953770391197920883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330479144126072357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6d2e465801c68448987b045552102a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _controller: 1
+  _button: 2
+  interactable: {fileID: 0}
 --- !u!1 &2024687388609332558
 GameObject:
   m_ObjectHideFlags: 0
