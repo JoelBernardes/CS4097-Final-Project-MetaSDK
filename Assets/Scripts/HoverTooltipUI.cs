@@ -11,12 +11,6 @@ public class HoverTooltipUI : MonoBehaviour
     public float yOffset = 0.5f;
     private GameObject tooltipInstance;
 
-    public float frequency;
-    public float amplitude;
-    public float duration;
-
-    OVRInput.Controller controller;
-
     void Update()
     {
         // always make the menu face the player
@@ -51,29 +45,5 @@ public class HoverTooltipUI : MonoBehaviour
             Destroy(tooltipInstance);
             tooltipInstance = null;
         }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "LeftHand")
-        {
-            controller = OVRInput.Controller.LTouch;
-        }
-        else if (collision.gameObject.tag == "RightHand")
-        {
-            controller = OVRInput.Controller.RTouch;
-        }
-    }
-
-    public void grabObject()
-    {
-        StartCoroutine(triggerHapticsRoutine(controller, frequency));
-    }
-
-    private IEnumerator triggerHapticsRoutine(OVRInput.Controller _controller, float frequency)
-    {
-        OVRInput.SetControllerVibration(frequency, amplitude, _controller);
-        yield return new WaitForSeconds(duration);
-        OVRInput.SetControllerVibration(0, 0, _controller);
     }
 }

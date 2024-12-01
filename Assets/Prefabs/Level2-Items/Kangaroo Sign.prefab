@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 6677253082117455202}
   - component: {fileID: 1868087641229032377}
   - component: {fileID: 7392237485952115790}
+  - component: {fileID: -2642211064555827619}
   m_Layer: 0
   m_Name: Kangaroo Sign
   m_TagString: Untagged
@@ -807,3 +808,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 0.09}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2642211064555827619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558736690999563061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ba943c4e7b0c246874e004c901d2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frequency: 1
+  amplitude: 1
+  duration: 1

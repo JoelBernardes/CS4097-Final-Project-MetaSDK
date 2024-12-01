@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7809554888897190122}
   - component: {fileID: 5748741831614456632}
   - component: {fileID: 4516331896299049561}
+  - component: {fileID: -6192877072642966557}
   m_Layer: 0
   m_Name: Clothes  Interactor
   m_TagString: Untagged
@@ -371,6 +372,21 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-6192877072642966557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516196872928087305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ba943c4e7b0c246874e004c901d2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frequency: 1
+  amplitude: 1
+  duration: 1
 --- !u!1 &3210870761148755064
 GameObject:
   m_ObjectHideFlags: 0
