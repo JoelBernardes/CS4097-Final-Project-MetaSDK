@@ -10,7 +10,8 @@ public class TutorialManager : MonoBehaviour
     public List<GameObject> dropZones;
 
     public GameObject winParticle;
-    
+    public AudioClip nextStageSFX;
+
     AudioSource audioWin;
 
     int currentStage = 0;
@@ -23,7 +24,7 @@ public class TutorialManager : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("TutorialComplete") == 1)
         {
-            FindAnyObjectByType<GoToScene>().LoadNextLevel("MainMenu");
+            //FindAnyObjectByType<GoToScene>().LoadNextLevel("MainMenu");
         }
     }
 
@@ -60,13 +61,11 @@ public class TutorialManager : MonoBehaviour
             }
             if (!allCorrect)
             {
-                Debug.Log("Level Not Over");
                 break;
             }
         }
         if (allCorrect)
         {
-            Debug.Log("All Snap Interactables have been placed!");
             if (firstTimePlayingEffects)
             {
                 Debug.Log("You win!");
@@ -92,6 +91,7 @@ public class TutorialManager : MonoBehaviour
         {
             currentStage++;
             tutorialInfoUI.GetComponent<TooltipUI>().SetTooltip(tutorialStagesName[currentStage], tutorialStagesText[currentStage]);
+            AudioSource.PlayClipAtPoint(nextStageSFX, Camera.main.transform.position);
         }
     }
 }
