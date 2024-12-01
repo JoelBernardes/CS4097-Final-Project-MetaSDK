@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5350934020671770902}
   - component: {fileID: 2982601588194332276}
   - component: {fileID: 5944006573715511300}
+  - component: {fileID: -8877965222602775200}
   m_Layer: 0
   m_Name: BookRed
   m_TagString: Book
@@ -370,6 +371,21 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-8877965222602775200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967016591553411399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ba943c4e7b0c246874e004c901d2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frequency: 1
+  amplitude: 1
+  duration: 1
 --- !u!1 &5839525317898446655
 GameObject:
   m_ObjectHideFlags: 0

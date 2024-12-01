@@ -23,6 +23,8 @@ TagManager:
   - Controller
   - Fan
   - Plant
+  - LeftHand
+  - RightHand
   layers:
   - Default
   - TransparentFX

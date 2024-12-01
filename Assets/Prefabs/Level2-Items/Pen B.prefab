@@ -93,12 +93,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2347843138695473258}
   - component: {fileID: 1595337085159328752}
-  - component: {fileID: 1123372489596734203}
+  - component: {fileID: 158448382573462425}
   - component: {fileID: 7192712162136681778}
   - component: {fileID: 3843518343338546188}
   - component: {fileID: 7483598584629989298}
   - component: {fileID: 3871492607800648517}
   - component: {fileID: 1920393433771776423}
+  - component: {fileID: 2919284728827331464}
   m_Layer: 0
   m_Name: Pen B
   m_TagString: PenHolderWithPen
@@ -152,7 +153,7 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8856950210230712639}
   m_Enabled: 1
---- !u!54 &1123372489596734203
+--- !u!54 &158448382573462425
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -331,7 +332,7 @@ MonoBehaviour:
   _maxIterationsPerFrame: 3
   _data: {fileID: 0}
   _pointableElement: {fileID: 6215926609418686623}
-  _rigidbody: {fileID: 1123372489596734203}
+  _rigidbody: {fileID: 158448382573462425}
   _distanceThreshold: 0.01
   _snapPoseTransform: {fileID: 0}
   _defaultInteractable: {fileID: 0}
@@ -419,6 +420,21 @@ MonoBehaviour:
   _whenCancel:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2919284728827331464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3446063211358238386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ba943c4e7b0c246874e004c901d2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frequency: 1
+  amplitude: 1
+  duration: 1
 --- !u!1 &5379722076960918739
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 94a16968-53e6-42de-96ef-84c80c187691
+  instanceId: 1142578d-127c-4ff0-88b5-80f897d3e986
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8
@@ -670,9 +686,9 @@ MonoBehaviour:
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
   _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 5040702585828052351}
+  _targetTransform: {fileID: 2347843138695473258}
   _maxGrabPoints: -1
-  _rigidbody: {fileID: 1123372489596734203}
+  _rigidbody: {fileID: 158448382573462425}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
 --- !u!114 &6223124507854796903
@@ -692,7 +708,7 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
   _pointableElement: {fileID: 6215926609418686623}
-  _rigidbody: {fileID: 1123372489596734203}
+  _rigidbody: {fileID: 158448382573462425}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
@@ -733,7 +749,7 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
   _pointableElement: {fileID: 6215926609418686623}
-  _rigidbody: {fileID: 1123372489596734203}
+  _rigidbody: {fileID: 158448382573462425}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
   _releaseDistance: 0
