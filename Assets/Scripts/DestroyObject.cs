@@ -14,6 +14,7 @@ public class DestroyObject : MonoBehaviour
     bool isDestroyed;
 
     private void Awake() {
+        interactable = GetComponentInChildren<GrabInteractable>();
         var CurrentState = interactable.State;
         isGrabbed = CurrentState == InteractableState.Select;
         isDestroyed = false;

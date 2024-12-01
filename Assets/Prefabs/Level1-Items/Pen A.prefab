@@ -439,6 +439,7 @@ GameObject:
   - component: {fileID: 8483877404317815325}
   - component: {fileID: 4915176017831748461}
   - component: {fileID: 2745224499610753292}
+  - component: {fileID: 2789688280737757097}
   m_Layer: 0
   m_Name: Pen A
   m_TagString: PenHolder
@@ -774,6 +775,21 @@ MonoBehaviour:
   frequency: 1
   amplitude: 1
   duration: 1
+--- !u!114 &2789688280737757097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5155504446513574660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6d2e465801c68448987b045552102a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _controller: 1
+  _button: 2
+  interactable: {fileID: 0}
 --- !u!1 &5208777080154684897
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GoToScene : MonoBehaviour
 {
+    public void LoadTutorial()
+    {
+       PlayerPrefs.SetInt("TutorialComplete", 0);
+       SceneManager.LoadScene("Tutorial");
+    }
+
     public void LoadNextLevel(string nextLevel)
     {
         SceneManager.LoadScene(nextLevel);

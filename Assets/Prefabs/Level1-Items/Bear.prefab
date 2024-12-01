@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2722618270497728357}
   - component: {fileID: 1382052593630473674}
   - component: {fileID: 1464320748518141059}
+  - component: {fileID: -3456135252121713206}
   m_Layer: 0
   m_Name: Bear
   m_TagString: Bed
@@ -375,6 +376,21 @@ MonoBehaviour:
   frequency: 1
   amplitude: 1
   duration: 1
+--- !u!114 &-3456135252121713206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956366761218673786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6d2e465801c68448987b045552102a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _controller: 1
+  _button: 2
+  interactable: {fileID: 6146924938424007871}
 --- !u!1 &3598186953546101775
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 9041039448205939823}
   - component: {fileID: 2670042993961463087}
   - component: {fileID: -370672868893464500}
+  - component: {fileID: -6548579125785964456}
   m_Layer: 0
   m_Name: Console PolyStation 5  Interactor
   m_TagString: Untagged
@@ -385,6 +386,21 @@ MonoBehaviour:
   frequency: 1
   amplitude: 1
   duration: 1
+--- !u!114 &-6548579125785964456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3405620617033207856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6d2e465801c68448987b045552102a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _controller: 1
+  _button: 2
+  interactable: {fileID: 0}
 --- !u!1 &7068589275460678910
 GameObject:
   m_ObjectHideFlags: 0
