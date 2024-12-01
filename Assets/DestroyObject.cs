@@ -11,10 +11,12 @@ public class DestroyObject : MonoBehaviour
     public GrabInteractable interactable;
     
     bool isGrabbed;
+    bool isDestroyed;
 
     private void Awake() {
         var CurrentState = interactable.State;
         isGrabbed = CurrentState == InteractableState.Select;
+        isDestroyed = false;
     }
 
     private void Update()
@@ -30,6 +32,18 @@ public class DestroyObject : MonoBehaviour
     {
         FindObjectOfType<GarbageManager>().AddToGarbage(gameObject);
         isGrabbed = false;
+        isDestroyed = true;
+    }
+
+    public void RestoreObject()
+    {
+        gameObject.SetActive(true);
+        isDestroyed = false;
+    }
+
+    public bool IsDestroyed()
+    {
+        return isDestroyed;
     }
     
 }

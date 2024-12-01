@@ -13,7 +13,7 @@ public class GarbageManager : MonoBehaviour
     public GameObject restoreVFX;
     public Transform restoreLocation;
 
-    static Stack<GameObject> disabledObjects = new Stack<GameObject>();
+    public static Stack<GameObject> disabledObjects = new Stack<GameObject>();
 
     private void Update()
     {
@@ -45,6 +45,7 @@ public class GarbageManager : MonoBehaviour
 
         GameObject obj = disabledObjects.Pop();
         obj.transform.position = restoreLocation.position;
-        obj.SetActive(true);
+        
+        obj.GetComponent<DestroyObject>().RestoreObject();
     }
 }

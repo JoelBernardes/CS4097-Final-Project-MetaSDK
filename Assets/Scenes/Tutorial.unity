@@ -9632,10 +9632,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7580314899004098700, guid: e602d47b47433428680e3e212c3d2575, type: 3}
       propertyPath: m_text
-      value: Well done! <br><br><br>You completed the tutorial. <br><br>Use the menu
-        button on the left controller and click on the exit button to exit. <br>When
-        using hands, press your left thumb and index finger together for the menu
-        to show.
+      value: Deleted items can also be restored.<br><br>All items will be restored
+        to the same location.<br><br> Press the B button on the left controller to
+        restore the last deleted item.
       objectReference: {fileID: 0}
     - target: {fileID: 7580314899004098700, guid: e602d47b47433428680e3e212c3d2575, type: 3}
       propertyPath: m_fontSize
@@ -18283,6 +18282,7 @@ GameObject:
   - component: {fileID: 1483086397}
   - component: {fileID: 1483086399}
   - component: {fileID: 1483086400}
+  - component: {fileID: 1483086401}
   m_Layer: 0
   m_Name: Tutorial Manager
   m_TagString: Untagged
@@ -18309,6 +18309,8 @@ MonoBehaviour:
   - Grabbing
   - Object Placement
   - Object Placement
+  - Deleting
+  - Restoring
   - Cabinets & Completion
   - Finish!
   tutorialStagesText:
@@ -18321,8 +18323,13 @@ MonoBehaviour:
   - 'Items can be placed in snap zones. <br><br> Press the right stick down to see
     what zones are available.<br><br><br>Place the item in the snap zone. It should
     snap into place. '
-  - Nice Job!<br><br><br> But wait there's a new box with another item. Grab the
-    new item.
+  - Nice Job!<br><br><br> But wait there's a new box with other items. Grab the new
+    items.
+  - On some levels, there may be items you don't need.<br><br>Delete the new item
+    with  the A button on the left controller.
+  - Deleted items can also be restored.<br><br>All items will be restored to the
+    same location.<br><br> Press the B button on the left controller to restore the
+    last deleted item.
   - Doors and cabinets can be opened by grabbing the handle and pulling.<br>Cabinets
     can contain snap zones.  <br><br>In the real game, you will need to place the
     objects in the correct snap zones to win.   Find the correct combination of the
@@ -18458,6 +18465,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04b936d98bda6014ba13b133ea2340e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1483086401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483086396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1ab6e1b7a3c294ead0e1ba64fc3896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyAdvanceToLevel: 6
+  restoreAdvanceToLevel: 7
+  objectDeletedTag: Plant
 --- !u!4 &1489490703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ea729863e0ab2b942844148c09cd395a, type: 3}
