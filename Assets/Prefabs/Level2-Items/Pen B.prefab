@@ -315,6 +315,8 @@ MonoBehaviour:
   tooltipPrefab: {fileID: 494690698262876036, guid: e602d47b47433428680e3e212c3d2575, type: 3}
   xOffset: 0.5
   yOffset: 0.5
+  controller: 2
+  button: 1
 --- !u!114 &3871492607800648517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,23 +362,23 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7483598584629989298}
         m_TargetAssemblyTypeName: HoverTooltipUI, Assembly-CSharp
-        m_MethodName: ShowTooltip
-        m_Mode: 1
+        m_MethodName: SetHovering
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   _whenUnhover:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7483598584629989298}
         m_TargetAssemblyTypeName: HoverTooltipUI, Assembly-CSharp
-        m_MethodName: HideTooltip
-        m_Mode: 1
+        m_MethodName: SetHovering
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -391,18 +393,6 @@ MonoBehaviour:
       - m_Target: {fileID: 3843518343338546188}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7483598584629989298}
-        m_TargetAssemblyTypeName: HoverTooltipUI, Assembly-CSharp
-        m_MethodName: HideTooltip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
