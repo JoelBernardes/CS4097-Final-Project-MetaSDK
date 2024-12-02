@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: -2153575392305193082}
   m_Layer: 0
   m_Name: Desk fan Interactor
-  m_TagString: Untagged
+  m_TagString: Desk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

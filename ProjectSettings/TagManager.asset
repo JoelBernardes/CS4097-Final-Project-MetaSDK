@@ -25,6 +25,7 @@ TagManager:
   - Plant
   - LeftHand
   - RightHand
+  - Drawer
   layers:
   - Default
   - TransparentFX

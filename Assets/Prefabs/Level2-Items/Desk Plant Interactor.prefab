@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: -8710522902886717027}
   m_Layer: 0
   m_Name: Desk Plant Interactor
-  m_TagString: Untagged
+  m_TagString: Desk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
