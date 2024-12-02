@@ -156,6 +156,7 @@ GameObject:
   - component: {fileID: 4870152816033396076}
   - component: {fileID: 174226757643756958}
   - component: {fileID: 7948804370974075205}
+  - component: {fileID: 2564197982773320170}
   m_Layer: 0
   m_Name: BearAnchor AR
   m_TagString: Bed
@@ -448,6 +449,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2564197982773320170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021313590530025045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ba943c4e7b0c246874e004c901d2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frequency: 1
+  amplitude: 1
+  duration: 1
 --- !u!1 &3285011375534354889
 GameObject:
   m_ObjectHideFlags: 0
