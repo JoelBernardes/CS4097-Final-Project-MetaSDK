@@ -26,6 +26,7 @@ TagManager:
   - LeftHand
   - RightHand
   - Drawer
+  - PenHolderWith3Pens
   layers:
   - Default
   - TransparentFX
