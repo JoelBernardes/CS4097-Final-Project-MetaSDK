@@ -12,7 +12,7 @@ public class StorybookTracker : MonoBehaviour
 
     public OVRInput.Button moveButton = OVRInput.Button.PrimaryIndexTrigger;
 
-    public OVRInput.Controller controller= OVRInput.Controller.RTouch;
+    public OVRInput.Controller controller = OVRInput.Controller.RTouch;
 
     [SerializeField] private string sceneName = "";
     private int currentTargetIndex = 0;
@@ -20,17 +20,23 @@ public class StorybookTracker : MonoBehaviour
 
     private float yOffset = 0.5f;
 
-    void Start() {
-        foreach(GameObject target in targetObjects) {
+    void Start()
+    {
+        foreach (GameObject target in targetObjects)
+        {
             target.SetActive(false);
         }
     }
     void Update()
     {
         // Check if the button is pressed
-        if (OVRInput.GetDown(moveButton) && !isMoving)
+        if (OVRInput.GetDown(moveButton) && !isMoving && currentTargetIndex != targetObjects.Count)
         {
             StartCoroutine(MoveToNextTarget());
+        }
+        else if (OVRInput.GetDown(moveButton) && !isMoving)
+        {
+            GameObject.FindObjectOfType<SceneFadeManager>().FadeToScene(sceneName);
         }
     }
 
@@ -55,16 +61,13 @@ public class StorybookTracker : MonoBehaviour
 
         targetObjects[currentTargetIndex].SetActive(true);
 
-        if(currentTargetIndex > 0) {
+        if (currentTargetIndex > 0)
+        {
             targetObjects[currentTargetIndex - 1].SetActive(false);
         }
 
-        if(currentTargetIndex == targetObjects.Count - 1) {
-            GameObject.FindObjectOfType<SceneFadeManager>().FadeToScene(sceneName);
-        }
-
         // Update the target index to move to the next GameObject in the list
-        currentTargetIndex = (currentTargetIndex + 1) % targetObjects.Count;
+        currentTargetIndex = currentTargetIndex + 1;
 
         isMoving = false;
     }

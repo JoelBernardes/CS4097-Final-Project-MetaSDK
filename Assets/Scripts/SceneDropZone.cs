@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneDropZone : MonoBehaviour
 {
-    public int sceneIndex;
+    public string sceneName;
 
     public void GoToScene() {
-        SceneManager.LoadScene(sceneIndex);
+        GameObject.FindObjectOfType<SceneFadeManager>().FadeToScene(sceneName);
     }
 }
