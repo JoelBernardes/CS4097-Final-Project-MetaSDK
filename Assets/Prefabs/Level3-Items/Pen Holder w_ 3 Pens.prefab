@@ -1046,7 +1046,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 4965813569839240631}
   _maxGrabPoints: -1
-  _rigidbody: {fileID: 0}
+  _rigidbody: {fileID: 4563666798754296886}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
 --- !u!114 &4296149876396731584
@@ -1727,7 +1727,7 @@ GameObject:
   - component: {fileID: 1242430892193117004}
   m_Layer: 0
   m_Name: Pen Holder w_ 3 Pens
-  m_TagString: PenHolderWith3Pens
+  m_TagString: Level3Desk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1827,8 +1827,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.175, y: 0.2, z: 0.175}
-  m_Center: {x: 0, y: 0.1, z: 0}
+  m_Size: {x: 0.175, y: 0.25, z: 0.175}
+  m_Center: {x: 0, y: 0.135, z: 0}
 --- !u!82 &8173950828880535847
 AudioSource:
   m_ObjectHideFlags: 0

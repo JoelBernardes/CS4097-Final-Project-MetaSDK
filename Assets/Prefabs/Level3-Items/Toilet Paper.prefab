@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 6687725411195546264}
   m_Layer: 0
   m_Name: Toilet Paper
-  m_TagString: Untagged
+  m_TagString: Bathroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

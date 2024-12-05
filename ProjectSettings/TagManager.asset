@@ -26,7 +26,11 @@ TagManager:
   - LeftHand
   - RightHand
   - Drawer
+  - Level3Desk
+  - Bathroom
+  - Kitchen
   - PenHolderWith3Pens
+  - Console
   layers:
   - Default
   - TransparentFX

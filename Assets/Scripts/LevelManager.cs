@@ -45,14 +45,14 @@ public class LevelManager : MonoBehaviour
             if (!socket.GetComponent<DropZoneChecker>().getOccupancy())
             {
                 allCorrect = false;
-                //Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have an item in it.");
+                Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have an item in it.");
             }
             else //check to see if right object is in right place
             {
                 allCorrect = true;
                 if(!socket.GetComponent<DropZoneChecker>().correctItemInZone()) //wrong item in slot
                 {
-                    //Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have the right item in it.");
+                    Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have the right item in it.");
                     allCorrect = false;
                 }
             }
