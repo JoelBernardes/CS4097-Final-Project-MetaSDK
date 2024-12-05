@@ -6,20 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: a7cc11067cfb3be40a521759c0f63e1c
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 7bd8d695cf3284765951950c805b45bc
   - enabled: 1
-    path: Assets/Scenes/ARScene.unity
-    guid: b6407800ab96340fd80a8729b0424d9d
+    path: Assets/Scenes/Tutorial.unity
+    guid: a7cc11067cfb3be40a521759c0f63e1c
+  - enabled: 1
+    path: Assets/Scenes/InitialCutscene.unity
+    guid: ce2db09f491c04ac2bf40b1a3abba20b
   - enabled: 1
     path: Assets/Scenes/Level1-ChildhoodBedroom.unity
     guid: f621873df421d9144a6adc39f3ae21bb
   - enabled: 1
+    path: Assets/Scenes/CutsceneTwo.unity
+    guid: 13dc65010eea54146a001697eda79b1d
+  - enabled: 1
     path: Assets/Scenes/Level2-DormRoom.unity
     guid: e1b5fc2c27fe2b7449ceca5c2511e63e
+  - enabled: 1
+    path: Assets/Scenes/CutsceneThree.unity
+    guid: c8e0df46fe13b436bb216b5c82e8f46a
+  - enabled: 1
+    path: Assets/Scenes/CutsceneFinal.unity
+    guid: d098d442d44ee40c19d64cf22b06e068
+  - enabled: 1
+    path: Assets/Scenes/ARScene.unity
+    guid: b6407800ab96340fd80a8729b0424d9d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 785a49eca7357d84aa7733cc87dfa53c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0c62af9830409cc4190d8c29f205b8f4, type: 2}

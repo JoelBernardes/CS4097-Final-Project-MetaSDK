@@ -13,6 +13,8 @@ public class GarbageManager : MonoBehaviour
     public GameObject restoreVFX;
     public Transform restoreLocation;
 
+    public bool trashIsActive = true;
+
     public static Stack<GameObject> disabledObjects = new Stack<GameObject>();
 
     private void Update()
@@ -25,6 +27,10 @@ public class GarbageManager : MonoBehaviour
 
     public void AddToGarbage(GameObject obj)
     {
+        if (!trashIsActive)
+        {
+            return;
+        }
         AudioSource.PlayClipAtPoint(destroySound, obj.transform.position);
         GameObject particle = Instantiate(destroyVFX, obj.transform.position, obj.transform.rotation);
         Destroy(particle, 2.0f);
@@ -35,6 +41,11 @@ public class GarbageManager : MonoBehaviour
 
     public void RestoreFromGarbage()
     {
+        if (!trashIsActive)
+        {
+            return;
+        }
+
         if (disabledObjects.Count == 0)
         {
             return;

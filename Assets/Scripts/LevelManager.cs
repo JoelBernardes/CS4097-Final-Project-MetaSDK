@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     public GameObject winParticle;
     public AudioSource audio;
 
+    public string sceneName;
+
     float currentTime = 0f;
     float timeBeforeTransition = 5f;
 
@@ -110,10 +112,7 @@ public class LevelManager : MonoBehaviour
         //Go to the next scene once everything is done
         if (currentTime >= timeBeforeTransition)
         {
-            if (SceneManager.GetActiveScene().buildIndex + 1 <= totalScenes - 1)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
+            GameObject.FindObjectOfType<SceneFadeManager>().FadeToScene(sceneName);
         }
         else
         {
