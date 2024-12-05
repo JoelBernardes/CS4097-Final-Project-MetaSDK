@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class DestroyObject : MonoBehaviour
 {
-    public OVRInput.Controller _controller;
-    public OVRInput.Button _button;
+    public OVRInput.Controller _controller = OVRInput.Controller.LTouch;
+    public OVRInput.Button _button = OVRInput.Button.Two;
 
     public GrabInteractable interactable;
     
