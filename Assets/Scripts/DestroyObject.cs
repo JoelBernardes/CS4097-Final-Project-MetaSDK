@@ -25,7 +25,10 @@ public class DestroyObject : MonoBehaviour
         isGrabbed = interactable.State == InteractableState.Select;
         if (isGrabbed && OVRInput.GetDown(_button, _controller))
         {
-            MoveObjectToGarbage();
+            if (FindObjectOfType<GarbageManager>().trashIsActive)
+            {
+                MoveObjectToGarbage();
+            }
         }
     }
 
