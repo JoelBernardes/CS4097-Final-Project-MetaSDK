@@ -798,7 +798,7 @@ MonoBehaviour:
   - {fileID: 469510883}
   winParticle: {fileID: 2055390920}
   audio: {fileID: 81450735}
-  sceneName: 
+  sceneName: CutsceneThree
 --- !u!4 &81450737
 Transform:
   m_ObjectHideFlags: 0

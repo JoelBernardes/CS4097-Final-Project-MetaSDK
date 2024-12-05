@@ -7136,6 +7136,7 @@ MonoBehaviour:
   - {fileID: 1765951512}
   winParticle: {fileID: 1468894703}
   audio: {fileID: 890408580}
+  sceneName: CutsceneTwo
 --- !u!82 &890408580
 AudioSource:
   m_ObjectHideFlags: 0
