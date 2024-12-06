@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: -3235115413772595271}
   m_Layer: 0
   m_Name: Pen Holder w_ Blue and Red Pens
-  m_TagString: Desk
+  m_TagString: PenHolderWith2Pens
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

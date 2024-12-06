@@ -30,6 +30,7 @@ TagManager:
   - PenHolderWith3Pens
   - Console
   - cardboardBox
+  - PenHolderWith2Pens
   layers:
   - Default
   - TransparentFX
