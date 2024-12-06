@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5915697460509637283}
   - component: {fileID: 8309310261324693311}
   - component: {fileID: 7130092834060946744}
-  - component: {fileID: 3037839516695166284}
+  - component: {fileID: 7284419066892817848}
   m_Layer: 0
   m_Name: Game Disk Interactor
   m_TagString: Untagged
@@ -360,8 +360,8 @@ MonoBehaviour:
   _controller: 1
   _button: 2
   interactable: {fileID: 8197887251115030934}
---- !u!65 &3037839516695166284
-BoxCollider:
+--- !u!64 &7284419066892817848
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -375,12 +375,13 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.194, y: 0.0048878402, z: 0.194}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4003154363908799557, guid: d639d85d9cc72e94fad31446a4a17bd3, type: 3}
 --- !u!1 &443579647339745191
 GameObject:
   m_ObjectHideFlags: 0

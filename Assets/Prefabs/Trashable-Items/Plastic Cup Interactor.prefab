@@ -599,7 +599,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2470363815970966763}
   - component: {fileID: 3706472821715361771}
-  - component: {fileID: 2496242479000859940}
   - component: {fileID: 2962845372831474276}
   - component: {fileID: 3879971735865180470}
   - component: {fileID: 5056295227442466715}
@@ -607,6 +606,7 @@ GameObject:
   - component: {fileID: 6626029690211661015}
   - component: {fileID: 3807293540840651591}
   - component: {fileID: 5289905227055834736}
+  - component: {fileID: 6038389378865493724}
   m_Layer: 0
   m_Name: Plastic Cup Interactor
   m_TagString: Untagged
@@ -663,27 +663,6 @@ LODGroup:
     - renderer: {fileID: 2642783100817734715}
     - renderer: {fileID: 639339429794417918}
   m_Enabled: 1
---- !u!65 &2496242479000859940
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5266341732905511898}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.16, y: 0.21, z: 0.13}
-  m_Center: {x: 0, y: 0.105, z: 0}
 --- !u!54 &2962845372831474276
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -949,7 +928,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controller: 1
   _button: 2
-  interactable: {fileID: 0}
+  interactable: {fileID: 867733636606220604}
+--- !u!64 &6038389378865493724
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5266341732905511898}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4119317738140548247, guid: 2be4e8b1fb061174496cf80591082a10, type: 3}
 --- !u!1 &5757125893650730237
 GameObject:
   m_ObjectHideFlags: 0

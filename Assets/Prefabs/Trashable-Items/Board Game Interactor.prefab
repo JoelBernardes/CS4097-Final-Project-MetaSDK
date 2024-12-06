@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 7617180363802350616}
   - component: {fileID: 9175596048761996481}
   - component: {fileID: 3807792574177216637}
+  - component: {fileID: 629296310786399142}
   m_Layer: 0
   m_Name: Board Game Interactor
   m_TagString: Untagged
@@ -419,7 +420,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controller: 1
   _button: 2
-  interactable: {fileID: 0}
+  interactable: {fileID: 2080514770107516997}
+--- !u!65 &629296310786399142
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448312798532035038}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7149172, y: 0.18941048, z: 0.42889}
+  m_Center: {x: 0.0035886317, y: 0.09470528, z: -0.0000032186508}
 --- !u!1 &4589436772264965782
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,8 +677,6 @@ GameObject:
   - component: {fileID: 2307262221204415786}
   - component: {fileID: 4375404854341545537}
   - component: {fileID: 8311209349761387435}
-  - component: {fileID: 743884081782458252}
-  - component: {fileID: 6444137512651298809}
   m_Layer: 0
   m_Name: EAThe80_Prop_BoardGame_01a_LOD2
   m_TagString: Untagged
@@ -729,45 +749,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &743884081782458252
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5242141608066911627}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.7149172, y: 0.18941048, z: 0.42889}
-  m_Center: {x: 0.0035886317, y: 0.09470528, z: -0.0000032186508}
---- !u!65 &6444137512651298809
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5242141608066911627}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.7149172, y: 0.18941048, z: 0.42889}
-  m_Center: {x: 0.0035886317, y: 0.09470528, z: -0.0000032186508}
