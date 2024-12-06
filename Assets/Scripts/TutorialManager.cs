@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using static Meta.WitAi.WitTexts;
 
 public class TutorialManager : MonoBehaviour
 {
