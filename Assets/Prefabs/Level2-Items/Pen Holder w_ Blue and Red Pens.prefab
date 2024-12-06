@@ -74,7 +74,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 5450336730448191765}
   _maxGrabPoints: -1
-  _rigidbody: {fileID: 0}
+  _rigidbody: {fileID: 7485073341743345451}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
 --- !u!114 &7707235817082890276
@@ -605,8 +605,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.175, y: 0.2, z: 0.175}
-  m_Center: {x: 0, y: 0.1, z: 0}
+  m_Size: {x: 0.175, y: 0.225, z: 0.175}
+  m_Center: {x: 0, y: 0.12, z: 0}
 --- !u!82 &7384748232996306039
 AudioSource:
   m_ObjectHideFlags: 0

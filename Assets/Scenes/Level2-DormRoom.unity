@@ -615,8 +615,9 @@ MonoBehaviour:
   - {fileID: 1281031563}
   - {fileID: 1604012119}
   - {fileID: 911122098}
-  - {fileID: 1376060182}
+  - {fileID: 1633495038}
   - {fileID: 1703068940}
+  - {fileID: 1376060182}
   - {fileID: 280159346211141521}
   - {fileID: 1904655383}
   - {fileID: 1321620299}
@@ -8234,6 +8235,11 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 1.0860001, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1633495038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5134180546942467313, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
+  m_PrefabInstance: {fileID: 926301854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1648979742
 GameObject:
   m_ObjectHideFlags: 0
