@@ -1725,6 +1725,7 @@ GameObject:
   - component: {fileID: 9154189414058207618}
   - component: {fileID: 6208151837588890990}
   - component: {fileID: 1242430892193117004}
+  - component: {fileID: -6215807956164296240}
   m_Layer: 0
   m_Name: Pen Holder w_ 3 Pens
   m_TagString: Level3Desk
@@ -2068,3 +2069,15 @@ MonoBehaviour:
   _controller: 1
   _button: 2
   interactable: {fileID: 408468047206826465}
+--- !u!114 &-6215807956164296240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989158488018511857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0918006675aa96540a65d82b38e682f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

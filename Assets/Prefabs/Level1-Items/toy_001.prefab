@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 6776129001331281083}
   - component: {fileID: -1866202785404315059}
   - component: {fileID: 3558491913334981435}
+  - component: {fileID: -6814641801350753974}
   m_Layer: 0
   m_Name: toy_001
   m_TagString: Stand
@@ -379,7 +380,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controller: 1
   _button: 2
-  interactable: {fileID: 0}
+  interactable: {fileID: 3786261137654585347}
+--- !u!114 &-6814641801350753974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3690910620428189759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0918006675aa96540a65d82b38e682f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9058360531611198122
 GameObject:
   m_ObjectHideFlags: 0

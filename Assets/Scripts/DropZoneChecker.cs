@@ -6,8 +6,6 @@ public class DropZoneChecker : MonoBehaviour
 {
     bool dropZoneOccupied = false;
     bool corectItem = false;
-    bool isHolding = true;
-
     public bool getOccupancy()
     {
         return dropZoneOccupied;
@@ -20,45 +18,35 @@ public class DropZoneChecker : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == gameObject.tag)
+        Debug.Log("Is Snap Interactable grabbed: " + other.gameObject.GetComponent<itemGrabbedChecker>().checkIfGrabbed());
+        if (!(other.gameObject.GetComponent<itemGrabbedChecker>().checkIfGrabbed()) && other.gameObject.GetComponent<Rigidbody>().isKinematic)
         {
-            //Debug.Log("Is Snap Interactable grabbed: " + isHolding);
-            if (!isHolding && other.gameObject.GetComponent<Rigidbody>().isKinematic)
+            //Debug.Log("Added Item: " + other.gameObject.name);
+            dropZoneOccupied = true;
+            if (other.gameObject.tag == gameObject.tag)
             {
-                //Debug.Log("Added Item: " + other.gameObject.name);
-                dropZoneOccupied = true;
-                if (other.gameObject.tag == gameObject.tag)
-                {
-                    //Debug.Log("Correct item!");
-                    corectItem = true;
-                }
-                else
-                {
-                    //Debug.Log("Incorrect Item");
-                    corectItem = false;
-                }
+                Debug.Log("Correct item!");
+                corectItem = true;
             }
             else
             {
-                isHolding = true;
-                dropZoneOccupied = false;
+                Debug.Log("Incorrect Item");
+                corectItem = false;
             }
+        }
+        else
+        {
+            dropZoneOccupied = false;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == gameObject.tag)
+        if (other.GetComponent<itemGrabbedChecker>().checkIfGrabbed())
         {
             Debug.Log("Removing Snap Interactable");
             dropZoneOccupied = false;
-            isHolding = true;
             corectItem = false;
         }
-    }
-
-    public void addItem()
-    {
-        isHolding = false;
     }
 }

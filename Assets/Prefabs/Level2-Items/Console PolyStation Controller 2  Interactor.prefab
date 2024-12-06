@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4516473213738010145}
   - component: {fileID: -4331851688857655242}
   - component: {fileID: 1265830439799423288}
+  - component: {fileID: -5796374945496973697}
   m_Layer: 0
   m_Name: Console PolyStation Controller 2  Interactor
   m_TagString: Controller
@@ -381,6 +382,18 @@ MonoBehaviour:
   _controller: 1
   _button: 2
   interactable: {fileID: 0}
+--- !u!114 &-5796374945496973697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579860917981759408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0918006675aa96540a65d82b38e682f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3874736345984099151
 GameObject:
   m_ObjectHideFlags: 0

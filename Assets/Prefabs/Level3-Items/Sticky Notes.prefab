@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 3327905921380863820}
   - component: {fileID: -5621688703074266675}
   - component: {fileID: -2736617806565949746}
+  - component: {fileID: 8979832257450625825}
   m_Layer: 0
   m_Name: Sticky Notes
   m_TagString: Level3Desk
@@ -379,6 +380,18 @@ MonoBehaviour:
   _controller: 1
   _button: 2
   interactable: {fileID: 3174521345692586286}
+--- !u!114 &8979832257450625825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54991791492611997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0918006675aa96540a65d82b38e682f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2665654983066746754
 GameObject:
   m_ObjectHideFlags: 0

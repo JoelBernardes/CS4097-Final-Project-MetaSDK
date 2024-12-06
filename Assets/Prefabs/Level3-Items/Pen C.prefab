@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 5930589314363635212}
   - component: {fileID: -2363994425019140722}
   - component: {fileID: 233935695507756722}
+  - component: {fileID: -8237952087152951916}
   m_Layer: 0
   m_Name: Pen C
   m_TagString: Desk
@@ -390,6 +391,18 @@ MonoBehaviour:
   _controller: 1
   _button: 2
   interactable: {fileID: 5863011499349940351}
+--- !u!114 &-8237952087152951916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698796523063548723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0918006675aa96540a65d82b38e682f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1119759674936247085
 GameObject:
   m_ObjectHideFlags: 0

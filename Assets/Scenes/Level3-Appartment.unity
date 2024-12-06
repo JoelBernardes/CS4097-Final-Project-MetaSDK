@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookDrop2
       objectReference: {fileID: 0}
+    - target: {fileID: 4837950683130846367, guid: d753743e65cdeb14088500a858f73719, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5186180034419169217, guid: d753743e65cdeb14088500a858f73719, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -278,6 +282,7 @@ Transform:
   - {fileID: 182612813}
   - {fileID: 7726499}
   - {fileID: 1330487620}
+  - {fileID: 752267586}
   m_Father: {fileID: 77287729}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &34752939
@@ -657,6 +662,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3900951972094789337, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4129838692008205660, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
       propertyPath: m_Name
       value: Microwave Drop Visual
@@ -860,7 +869,6 @@ Transform:
   - {fileID: 1971282419}
   - {fileID: 1687709770}
   - {fileID: 29160508}
-  - {fileID: 752267586}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &80196212
@@ -926,6 +934,10 @@ PrefabInstance:
     - target: {fileID: 3897093008226015889, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900951972094789337, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4129838692008205660, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
       propertyPath: m_Name
@@ -1292,6 +1304,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 29160508}
     m_Modifications:
+    - target: {fileID: 2064530980592327128, guid: 2f8cd3006cc51144a87dc98adf9de2cb, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3797729574955386479, guid: 2f8cd3006cc51144a87dc98adf9de2cb, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1524,6 +1540,10 @@ PrefabInstance:
     - target: {fileID: 3621293929170167479, guid: d753743e65cdeb14088500a858f73719, type: 3}
       propertyPath: m_Name
       value: BookDrop1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837950683130846367, guid: d753743e65cdeb14088500a858f73719, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5186180034419169217, guid: d753743e65cdeb14088500a858f73719, type: 3}
       propertyPath: m_Enabled
@@ -3300,6 +3320,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3900951972094789337, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4129838692008205660, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
       propertyPath: m_Name
       value: Toilet Paper Drop Visual
@@ -3424,6 +3448,10 @@ PrefabInstance:
     - target: {fileID: 4785175898250156047, guid: 2eec2fd9d1ce7bf4c8dccc135a190bd2, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955824588395476626, guid: 2eec2fd9d1ce7bf4c8dccc135a190bd2, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7070030904768095373, guid: 2eec2fd9d1ce7bf4c8dccc135a190bd2, type: 3}
       propertyPath: m_LocalScale.x
@@ -3949,6 +3977,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 29160508}
     m_Modifications:
+    - target: {fileID: 1067084623310150896, guid: 08d4401c6ff8bdc4b94e0cf9a17eaffa, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2555611391518711104, guid: 08d4401c6ff8bdc4b94e0cf9a17eaffa, type: 3}
       propertyPath: m_Name
       value: Wall Drop Visual
@@ -4602,7 +4634,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 77287729}
+    m_TransformParent: {fileID: 29160508}
     m_Modifications:
     - target: {fileID: 3559655211262249730, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
       propertyPath: m_Name
@@ -4611,6 +4643,10 @@ PrefabInstance:
     - target: {fileID: 3559655211262249730, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
       propertyPath: m_TagString
       value: Level3Desk
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613056739549360426, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8265366060168227042, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
       propertyPath: m_Name
@@ -4642,7 +4678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8525862775297326107, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8525862775297326107, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
       propertyPath: m_LocalRotation.y
@@ -4650,7 +4686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8525862775297326107, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8525862775297326107, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6712,6 +6748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desk Drop Visual
       objectReference: {fileID: 0}
+    - target: {fileID: 3714745655215881964, guid: b9b11a7b891f05a4db20496e5a325025, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4823316005272503492, guid: b9b11a7b891f05a4db20496e5a325025, type: 3}
       propertyPath: m_Name
       value: DeskDrop1
@@ -7329,6 +7369,10 @@ PrefabInstance:
     - target: {fileID: 3621293929170167479, guid: d753743e65cdeb14088500a858f73719, type: 3}
       propertyPath: m_Name
       value: BookDrop3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837950683130846367, guid: d753743e65cdeb14088500a858f73719, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5186180034419169217, guid: d753743e65cdeb14088500a858f73719, type: 3}
       propertyPath: m_Enabled
@@ -8014,6 +8058,10 @@ PrefabInstance:
     - target: {fileID: 3559655211262249730, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
       propertyPath: m_Name
       value: ControllerDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613056739549360426, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5287084872498732219, guid: d105cc5c119664e4cb2dc3b9308272c5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9243,6 +9291,10 @@ PrefabInstance:
     - target: {fileID: 1291852923305618139, guid: 2513271880448a24cba3a13f04038329, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604972502504678697, guid: 2513271880448a24cba3a13f04038329, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3799942844757853980, guid: 2513271880448a24cba3a13f04038329, type: 3}
       propertyPath: m_Enabled
@@ -12748,6 +12800,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 29160508}
     m_Modifications:
+    - target: {fileID: 3885369940070121625, guid: ac9e4035e64d84848829c823e65cff5c, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4769739129845692621, guid: ac9e4035e64d84848829c823e65cff5c, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -13007,6 +13063,10 @@ PrefabInstance:
     - target: {fileID: 1394465622309749800, guid: 206242c1d4bfc394f8ae7c0da9c58d00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419334315814779249, guid: 206242c1d4bfc394f8ae7c0da9c58d00, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6075652253039110053, guid: 206242c1d4bfc394f8ae7c0da9c58d00, type: 3}
       propertyPath: m_Name

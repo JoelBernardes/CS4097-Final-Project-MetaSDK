@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 9127132136017374243}
   - component: {fileID: -4704921487676141487}
   - component: {fileID: 6687725411195546264}
+  - component: {fileID: 2952233467101151956}
   m_Layer: 0
   m_Name: Toilet Paper
   m_TagString: Bathroom
@@ -524,6 +525,18 @@ MonoBehaviour:
   _controller: 1
   _button: 2
   interactable: {fileID: 5571419469239905807}
+--- !u!114 &2952233467101151956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5035103466299819058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0918006675aa96540a65d82b38e682f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6523579313541108499
 GameObject:
   m_ObjectHideFlags: 0

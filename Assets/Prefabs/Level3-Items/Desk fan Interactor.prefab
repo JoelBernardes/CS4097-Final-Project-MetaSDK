@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 2464067031855354365}
   - component: {fileID: 7476804186563160710}
   - component: {fileID: -2153575392305193082}
+  - component: {fileID: 6854878402290728069}
   m_Layer: 0
   m_Name: Desk fan Interactor
   m_TagString: Level3Desk
@@ -380,6 +381,18 @@ MonoBehaviour:
   _controller: 1
   _button: 2
   interactable: {fileID: 0}
+--- !u!114 &6854878402290728069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168950454768216187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0918006675aa96540a65d82b38e682f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6250806252384384682
 GameObject:
   m_ObjectHideFlags: 0

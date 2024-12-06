@@ -137,9 +137,5 @@ public class LevelManager : MonoBehaviour
         {
             GameObject.FindObjectOfType<SceneFadeManager>().FadeToScene(sceneName);
         }
-        else
-        {
-            SceneManager.LoadScene(SceneManager.GetSceneByName("MainMenu").buildIndex);
-        }
     }
 }

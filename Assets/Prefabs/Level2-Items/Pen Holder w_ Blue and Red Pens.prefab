@@ -503,6 +503,7 @@ GameObject:
   - component: {fileID: -4929451972161611806}
   - component: {fileID: -7565842735720365843}
   - component: {fileID: -6387491504042632120}
+  - component: {fileID: -3235115413772595271}
   m_Layer: 0
   m_Name: Pen Holder w_ Blue and Red Pens
   m_TagString: Desk
@@ -858,6 +859,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combinedItemPrefab: {fileID: 8989158488018511857, guid: c72d0b19907507941a8ebedcf84b5315, type: 3}
+--- !u!114 &-3235115413772595271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146263755027891120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0918006675aa96540a65d82b38e682f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4406167099414718920
 GameObject:
   m_ObjectHideFlags: 0

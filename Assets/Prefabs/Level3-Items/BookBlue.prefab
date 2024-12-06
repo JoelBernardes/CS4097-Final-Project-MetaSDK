@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4636446807184562201}
   - component: {fileID: 8229223428251752084}
   - component: {fileID: -8553035106204418258}
+  - component: {fileID: -1568059818879078045}
   m_Layer: 0
   m_Name: BookBlue
   m_TagString: Book
@@ -380,6 +381,18 @@ MonoBehaviour:
   _controller: 1
   _button: 2
   interactable: {fileID: 0}
+--- !u!114 &-1568059818879078045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2989698565783395876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0918006675aa96540a65d82b38e682f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4286688256596821090
 GameObject:
   m_ObjectHideFlags: 0
