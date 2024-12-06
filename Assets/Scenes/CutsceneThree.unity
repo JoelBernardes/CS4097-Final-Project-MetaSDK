@@ -35647,7 +35647,7 @@ MonoBehaviour:
   moveSpeed: 3
   moveButton: -1
   controller: 2
-  sceneName: Level1-ChildhoodBedroom
+  sceneName: Level3-Appartment
 --- !u!1 &1861503896
 GameObject:
   m_ObjectHideFlags: 0

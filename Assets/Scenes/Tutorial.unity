@@ -7074,6 +7074,10 @@ PrefabInstance:
       propertyPath: instanceId
       value: c6a6ef3c-374d-4a66-84fc-b93edf08b553
       objectReference: {fileID: 0}
+    - target: {fileID: 8691102574029490121, guid: be8801dae10dbe84bbfbfd587ac08906, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9123268641708504391, guid: be8801dae10dbe84bbfbfd587ac08906, type: 3}
       propertyPath: instanceId
       value: b0ee75c2-0ae2-4312-8052-ad5ec13c3977

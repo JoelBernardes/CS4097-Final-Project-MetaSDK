@@ -11,14 +11,11 @@ public class SceneFadeManager : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name != "Tutorial")
-        {
-            StartCoroutine(Fade(0.0f));
-        }
+        StartCoroutine(Fade(0.0f));
     }
 
         // Call this method to fade to the next scene
-        public void FadeToScene(string sceneName)
+    public void FadeToScene(string sceneName)
     {
         if (!isFading)
         {
