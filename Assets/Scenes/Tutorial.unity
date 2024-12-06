@@ -7053,6 +7053,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4623380428594679852, guid: be8801dae10dbe84bbfbfd587ac08906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2080158017}
     - targetCorrespondingSourceObject: {fileID: 4069762515310471418, guid: be8801dae10dbe84bbfbfd587ac08906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 579669650}
@@ -7078,6 +7081,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &765673202 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4623380428594679852, guid: be8801dae10dbe84bbfbfd587ac08906, type: 3}
+  m_PrefabInstance: {fileID: 765673200}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &771678154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8261,9 +8269,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7580314899004098700, guid: e602d47b47433428680e3e212c3d2575, type: 3}
       propertyPath: m_text
-      value: Deleted items can also be restored.<br><br>All items will be restored
-        to the same location.<br><br> Press the B button on the left controller to
-        restore the last deleted item.
+      value: 'Items can be placed in snap zones. <br> Press the right stick down
+        to see what zones are available.<br><br>Place the item in the snap zone.
+        It should snap into place. <br><br> Tip: You are also able to view the status
+        of snap zones with the A button on the right controller.'
       objectReference: {fileID: 0}
     - target: {fileID: 7580314899004098700, guid: e602d47b47433428680e3e212c3d2575, type: 3}
       propertyPath: m_fontSize
@@ -15524,9 +15533,10 @@ MonoBehaviour:
   - Great! <br><br><br>Touch the box in the room and try hovering the item with a
     controller.
   - '  <br><br><br>Now grab the item with the grip button on a controller.'
-  - 'Items can be placed in snap zones. <br><br> Press the right stick down to see
-    what zones are available.<br><br><br>Place the item in the snap zone. It should
-    snap into place. '
+  - 'Items can be placed in snap zones. <br> Press the right stick down to see what
+    zones are available.<br><br>Place the item in the snap zone. It should snap into
+    place. <br><br> Tip: You are also able to view the status of snap zones with
+    the A button on the right controller.'
   - Nice Job!<br><br><br> But wait there's a new box with other items. Grab the new
     items.
   - On some levels, there may be items you don't need.<br><br>Delete the new item
@@ -15546,6 +15556,10 @@ MonoBehaviour:
   - {fileID: 1036157553}
   winParticle: {fileID: 1468894703}
   nextStageSFX: {fileID: 8300000, guid: 2d117168b0c8eb045b81842a7234963a, type: 3}
+  snapZoneListParent: {fileID: 2080158019}
+  snapZoneList: {fileID: 2080158018}
+  _checkListController: 2
+  _checkListButton: 1
 --- !u!4 &1483086398
 Transform:
   m_ObjectHideFlags: 0
@@ -20728,6 +20742,128 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 72786693764988424, guid: 89893e4928b4fdf4cb7fb21c8d7c3727, type: 3}
   m_PrefabInstance: {fileID: 1851549504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2080158016
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 765673202}
+    m_Modifications:
+    - target: {fileID: 555720446272364838, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_Name
+      value: Checklist Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 555720446272364838, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.33000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+--- !u!224 &2080158017 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1546121099416781862, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+  m_PrefabInstance: {fileID: 2080158016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2080158018 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5200207751896122972, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+  m_PrefabInstance: {fileID: 2080158016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2080158019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 555720446272364838, guid: ba713f81c1ba5f948956a722d319baa1, type: 3}
+  m_PrefabInstance: {fileID: 2080158016}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2081281379
 PrefabInstance:

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using static Meta.WitAi.WitTexts;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -12,6 +14,12 @@ public class TutorialManager : MonoBehaviour
     public GameObject winParticle;
     public AudioClip nextStageSFX;
 
+    public GameObject snapZoneListParent;
+    public TMP_Text snapZoneList;
+
+    public OVRInput.Controller _checkListController = OVRInput.Controller.RTouch;
+    public OVRInput.Button _checkListButton = OVRInput.Button.One;
+
     AudioSource audioWin;
 
     int currentStage = 0;
@@ -19,6 +27,8 @@ public class TutorialManager : MonoBehaviour
 
     bool allCorrect = false;
     bool firstTimePlayingEffects = true;
+
+
 
     private void Awake()
     {
@@ -41,29 +51,35 @@ public class TutorialManager : MonoBehaviour
         //bool alreadyChecked = false;
         //Debug.Log("Checking Placement...");
         // Add your logic for when all interactables are placed
-        allCorrect = false;
+        allCorrect = true;
+        string listText = "";
         foreach (var socket in dropZones)
         {
             //Debug.Log("Checking Snap Interactable: " + socket.name);
             if (!socket.GetComponent<DropZoneChecker>().getOccupancy())
             {
+                listText += "<color=red>" + socket.name + ": Wrong" + "</color>";
                 allCorrect = false;
                 //Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have an item in it.");
             }
             else //check to see if right object is in right place
             {
-                allCorrect = true;
                 if (!socket.GetComponent<DropZoneChecker>().correctItemInZone()) //wrong item in slot
                 {
                     //Debug.Log($"Snap Interactable: {socket.gameObject.name} does not have the right item in it.");
                     allCorrect = false;
+                    listText += "<color=yellow>" + socket.name + ": Wrong Item" + "</color>";
+                }
+                else
+                {
+                    listText += "<color=green>" + socket.name + ": Correct" + "</color>";
                 }
             }
-            if (!allCorrect)
-            {
-                break;
-            }
+
+            listText += "<br>";
         }
+
+        snapZoneList.text = listText.Substring(0, listText.Length - 4);
         if (allCorrect)
         {
             if (firstTimePlayingEffects)
@@ -81,6 +97,15 @@ public class TutorialManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (OVRInput.GetDown(_checkListButton, _checkListController))
+        {
+            snapZoneListParent.SetActive(true);
+        }
+        else if (OVRInput.GetUp(_checkListButton, _checkListController))
+        {
+            snapZoneListParent.SetActive(false);
+        }
+
         tutorialInfoUI.transform.LookAt(GameObject.FindGameObjectWithTag("MainCamera").transform.position);   
         AllInteractablesPlaced();
     }
