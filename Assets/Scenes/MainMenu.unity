@@ -1891,7 +1891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6892704309689592709, guid: 033f59fd986d74d1aaf3ac4331154e93, type: 3}
       propertyPath: m_Name
-      value: SnapZones (1)
+      value: Campaign Mode
       objectReference: {fileID: 0}
     - target: {fileID: 8993204303257599689, guid: 033f59fd986d74d1aaf3ac4331154e93, type: 3}
       propertyPath: _whenHover.m_PersistentCalls.m_Calls.Array.size
@@ -1923,7 +1923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8993204303257599689, guid: 033f59fd986d74d1aaf3ac4331154e93, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: SceneDropZone, Assembly-CSharp
+      value: CampaignSceneDropZone, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8993204303257599689, guid: 033f59fd986d74d1aaf3ac4331154e93, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1952,10 +1952,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 145414574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cecc05733d9044543a66b7a80e406257, type: 3}
+  m_Script: {fileID: 11500000, guid: a8cc750b655cc864ab76589b8c3e67d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: InitialCutscene
 --- !u!1 &145666060
 GameObject:
   m_ObjectHideFlags: 0
@@ -18028,7 +18027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6892704309689592709, guid: 033f59fd986d74d1aaf3ac4331154e93, type: 3}
       propertyPath: m_Name
-      value: SnapZones
+      value: AR Mode
       objectReference: {fileID: 0}
     - target: {fileID: 8993204303257599689, guid: 033f59fd986d74d1aaf3ac4331154e93, type: 3}
       propertyPath: _whenHover.m_PersistentCalls.m_Calls.Array.size
@@ -20979,7 +20978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1310800281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28552,7 +28551,7 @@ GameObject:
   - component: {fileID: 1922393490}
   - component: {fileID: 1922393489}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: AudioPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

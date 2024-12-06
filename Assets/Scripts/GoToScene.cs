@@ -13,11 +13,11 @@ public class GoToScene : MonoBehaviour
 
     public void LoadNextLevel(string nextLevel)
     {
-        SceneManager.LoadScene(nextLevel);
+        GameObject.FindObjectOfType<SceneFadeManager>().FadeToScene(nextLevel);
     }
 
     public void LoadCurrentLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameObject.FindObjectOfType<SceneFadeManager>().FadeToScene(SceneManager.GetActiveScene().name);
     }
 }

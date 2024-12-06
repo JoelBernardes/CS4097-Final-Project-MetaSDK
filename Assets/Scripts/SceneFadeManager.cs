@@ -31,6 +31,7 @@ public class SceneFadeManager : MonoBehaviour
         yield return StartCoroutine(Fade(1f));
 
         // Load the scene asynchronously
+        PlayerPrefs.SetString("savedScene", sceneName);
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
 
         // While the scene is loading, wait

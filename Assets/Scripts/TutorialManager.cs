@@ -24,7 +24,7 @@ public class TutorialManager : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("TutorialComplete") == 1)
         {
-            FindAnyObjectByType<GoToScene>().LoadNextLevel("MainMenu");
+            GameObject.FindObjectOfType<SceneFadeManager>().FadeToScene("MainMenu");
         }
     }
 
