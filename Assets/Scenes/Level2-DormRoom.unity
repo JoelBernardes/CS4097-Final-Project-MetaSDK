@@ -1259,6 +1259,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Drawer
       objectReference: {fileID: 0}
+    - target: {fileID: 5134180546942467313, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
+      propertyPath: m_Name
+      value: DrawerDrop
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134180546942467313, guid: 5a3a89c53df765249aa592443d54cb96, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
