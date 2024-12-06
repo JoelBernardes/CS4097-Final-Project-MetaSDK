@@ -5,44 +5,47 @@ using UnityEngine.UI;
 
 public class ProgressBarStatus : MonoBehaviour
 {
-    public Slider timeBar;
+    public Slider progressBar;
     void Start()
     {
-        if (PlayerPrefs.GetString("sceneSaved") == "MainMenu")
+        string savedState = PlayerPrefs.GetString("savedScene", "");
+        Debug.Log("Saved at: " + savedState);
+        if (savedState.Equals("MainMenu"))
         {
-            timeBar.value = 0;
+            progressBar.value = 0;
         }
-        else if (PlayerPrefs.GetString("sceneSaved") == "InitialCutscene")
+        else if (savedState.Equals("InitialCutscene"))
         {
-            timeBar.value = 0.14f;
+            progressBar.value = 0.14f;
         }
-        else if (PlayerPrefs.GetString("sceneSaved") == "Level1-ChildhoodBedroom")
+        else if (savedState.Equals("Level1-ChildhoodBedroom"))
         {
-            timeBar.value = 0.29f;
+            progressBar.value = 0.29f;
         }
-        else if (PlayerPrefs.GetString("sceneSaved") == "CutsceneTwo")
+        else if (savedState.Equals("CutsceneTwo"))
         {
-            timeBar.value = 0.43f;
+            progressBar.value = 0.43f;
         }
-        if (PlayerPrefs.GetString("sceneSaved") == "Level2-DormRoom")
+        else if (savedState.Equals("Level2-DormRoom"))
         {
-            timeBar.value = 0.57f;
+            progressBar.value = 0.57f;
         }
-        else if (PlayerPrefs.GetString("sceneSaved") == "CutsceneThree")
+        else if (savedState.Equals("CutsceneThree"))
         {
-            timeBar.value = 0.71f;
+            progressBar.value = 0.71f;
         }
-        else if (PlayerPrefs.GetString("sceneSaved") == "Level3-Appartment")
+        else if (savedState.Equals("Level3-Appartment"))
         {
-            timeBar.value = 0.86f;
+            progressBar.value = 0.86f;
         }
-        else if (PlayerPrefs.GetString("sceneSaved") == "CutsceneFinal")
+        else if (savedState.Equals("CutsceneFinal"))
         {
-            timeBar.value = 1f;
+            progressBar.value = 1f;
         }
         else
         {
-            timeBar.value = 0;
+            progressBar.value = 0;
         }
+        Debug.Log("Progress bar value: " + progressBar.value);
     }
 }

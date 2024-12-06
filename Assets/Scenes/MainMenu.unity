@@ -3377,7 +3377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c26f6bda3a179c48a273e3e9ba677a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBar: {fileID: 283660811}
+  progressBar: {fileID: 283660811}
 --- !u!4 &244323500
 Transform:
   m_ObjectHideFlags: 0
