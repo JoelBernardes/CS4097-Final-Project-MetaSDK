@@ -23,8 +23,6 @@ TagManager:
   - Controller
   - Fan
   - Plant
-  - LeftHand
-  - RightHand
   - Drawer
   - Level3Desk
   - Bathroom

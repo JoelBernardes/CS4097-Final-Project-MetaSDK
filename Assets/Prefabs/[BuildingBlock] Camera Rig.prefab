@@ -1990,7 +1990,7 @@ GameObject:
   - component: {fileID: 8783655846053729340}
   m_Layer: 0
   m_Name: RightController
-  m_TagString: RightHand
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21793,7 +21793,7 @@ GameObject:
   - component: {fileID: 364835652453423577}
   m_Layer: 0
   m_Name: RightHand
-  m_TagString: RightHand
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25848,7 +25848,7 @@ GameObject:
   - component: {fileID: 3285983354239845634}
   m_Layer: 0
   m_Name: LeftHand
-  m_TagString: LeftHand
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30217,7 +30217,7 @@ GameObject:
   - component: {fileID: 2793207016154268994}
   m_Layer: 0
   m_Name: LeftController
-  m_TagString: LeftHand
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

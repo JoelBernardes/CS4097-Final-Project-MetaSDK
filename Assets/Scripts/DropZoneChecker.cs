@@ -18,35 +18,41 @@ public class DropZoneChecker : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Is Snap Interactable grabbed: " + other.gameObject.GetComponent<itemGrabbedChecker>().checkIfGrabbed());
-        if (!(other.gameObject.GetComponent<itemGrabbedChecker>().checkIfGrabbed()) && other.gameObject.GetComponent<Rigidbody>().isKinematic)
+        if (other.gameObject.tag != "Untagged")
         {
-            //Debug.Log("Added Item: " + other.gameObject.name);
-            dropZoneOccupied = true;
-            if (other.gameObject.tag == gameObject.tag)
+            Debug.Log("Is Snap Interactable grabbed: " + other.gameObject.GetComponent<itemGrabbedChecker>().checkIfGrabbed());
+            if (!(other.gameObject.GetComponent<itemGrabbedChecker>().checkIfGrabbed()) && other.gameObject.GetComponent<Rigidbody>().isKinematic)
             {
-                Debug.Log("Correct item!");
-                corectItem = true;
+                //Debug.Log("Added Item: " + other.gameObject.name);
+                dropZoneOccupied = true;
+                if (other.gameObject.tag == gameObject.tag)
+                {
+                    Debug.Log("Correct item!");
+                    corectItem = true;
+                }
+                else
+                {
+                    Debug.Log("Incorrect Item");
+                    corectItem = false;
+                }
             }
             else
             {
-                Debug.Log("Incorrect Item");
-                corectItem = false;
+                dropZoneOccupied = false;
             }
-        }
-        else
-        {
-            dropZoneOccupied = false;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<itemGrabbedChecker>().checkIfGrabbed())
+        if (other.gameObject.tag != "Untagged")
         {
-            Debug.Log("Removing Snap Interactable");
-            dropZoneOccupied = false;
-            corectItem = false;
+            if (other.GetComponent<itemGrabbedChecker>().checkIfGrabbed())
+            {
+                Debug.Log("Removing Snap Interactable");
+                dropZoneOccupied = false;
+                corectItem = false;
+            }
         }
     }
 }
