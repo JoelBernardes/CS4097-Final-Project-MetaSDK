@@ -317,7 +317,7 @@ MonoBehaviour:
   xOffset: 0.5
   yOffset: 0.5
   controller: 2
-  button: 1
+  button: 8192
 --- !u!114 &4244608045142768015
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -252,6 +252,8 @@ MonoBehaviour:
   tooltipPrefab: {fileID: 494690698262876036, guid: e602d47b47433428680e3e212c3d2575, type: 3}
   xOffset: 0.5
   yOffset: 0.5
+  controller: 2
+  button: 8192
 --- !u!114 &3541954295192465046
 MonoBehaviour:
   m_ObjectHideFlags: 0

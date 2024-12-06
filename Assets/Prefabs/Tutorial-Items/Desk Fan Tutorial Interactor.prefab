@@ -239,6 +239,8 @@ MonoBehaviour:
   tooltipPrefab: {fileID: 494690698262876036, guid: e602d47b47433428680e3e212c3d2575, type: 3}
   xOffset: 0.5
   yOffset: 0.5
+  controller: 2
+  button: 8192
 --- !u!82 &4158416364624292252
 AudioSource:
   m_ObjectHideFlags: 0

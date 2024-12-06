@@ -160,7 +160,7 @@ MonoBehaviour:
   xOffset: 0.5
   yOffset: 0.5
   controller: 2
-  button: 1
+  button: 8192
 --- !u!82 &5671159973357209469
 AudioSource:
   m_ObjectHideFlags: 0
