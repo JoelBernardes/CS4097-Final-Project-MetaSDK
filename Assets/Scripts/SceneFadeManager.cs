@@ -11,11 +11,14 @@ public class SceneFadeManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Fade(0.0f));
+        if (SceneManager.GetActiveScene().name != "Tutorial")
+        {
+            StartCoroutine(Fade(0.0f));
+        }
     }
 
-    // Call this method to fade to the next scene
-    public void FadeToScene(string sceneName)
+        // Call this method to fade to the next scene
+        public void FadeToScene(string sceneName)
     {
         if (!isFading)
         {
@@ -31,7 +34,10 @@ public class SceneFadeManager : MonoBehaviour
         yield return StartCoroutine(Fade(1f));
 
         // Load the scene asynchronously
-        PlayerPrefs.SetString("savedScene", sceneName);
+        if (SceneManager.GetActiveScene().name != "Tutorial")
+        {
+            PlayerPrefs.SetString("savedScene", sceneName);
+        }
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
 
         // While the scene is loading, wait

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine;
 
@@ -33,7 +34,7 @@ public class TutorialManager : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("TutorialComplete") == 1)
         {
-            GameObject.FindObjectOfType<SceneFadeManager>().FadeToScene("MainMenu");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 

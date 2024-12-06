@@ -7026,6 +7026,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2671841665896929553, guid: be8801dae10dbe84bbfbfd587ac08906, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3245965768652580577, guid: be8801dae10dbe84bbfbfd587ac08906, type: 3}
       propertyPath: instanceId
       value: 28f916a7-3965-4478-aefd-79b1ade693ce
